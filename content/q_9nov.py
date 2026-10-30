@@ -279,7 +279,8 @@ reel("105", "2026-11-21T18:00:00",
       {"stamp": "CIENCIA", "body": "Es la cadencia que marca el paso a intensidad moderada."},
       {"title": "100 pasos/min:\n*moderada*", "body": "130: vigorosa. Estudio de laboratorio con 76 adultos."},
       {"title": "Cuenta 15 segundos:\n*25 pasos*", "body": "Si llegas, estás caminando con intensidad."}],
-     "No es solo cuánto caminas. Es a qué ritmo.\n\nEn un estudio de laboratorio con 76 adultos, publicado en el International Journal of Behavioral Nutrition and Physical Activity, caminar a unos 100 pasos por minuto marcó la intensidad moderada, la que cuenta para los 150 minutos semanales. Y 130 pasos por minuto, la vigorosa.\n\nPruébalo: cuenta tus pasos durante 15 segundos. Si llegas a 25, vas bien. 👟\n\nEtiqueta a quien camina demasiado despacio.\n\n#longevidad #caminar #pasos #movimiento")
+     "No es solo cuánto caminas. Es a qué ritmo.\n\nEn un estudio de laboratorio con 76 adultos, publicado en el International Journal of Behavioral Nutrition and Physical Activity, caminar a unos 100 pasos por minuto marcó la intensidad moderada, la que cuenta para los 150 minutos semanales. Y 130 pasos por minuto, la vigorosa.\n\nPruébalo: cuenta tus pasos durante 15 segundos. Si llegas a 25, vas bien. 👟\n\nEtiqueta a quien camina demasiado despacio.\n\n#longevidad #caminar #pasos #movimiento",
+     top=0, pos="50% 85%")
 
 car("106", "2026-11-22T10:00:00",
     {"kicker": "Hábitos", "title": "Un hábito tarda\n*66 días*,\nno 21"},
