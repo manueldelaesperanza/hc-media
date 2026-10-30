@@ -19,3 +19,4 @@
 - 80 carrusel lun 9 10:00 · id 411088796
 - 84 carrusel mié 11 10:00 · id 411090175
 - 86 carrusel jue 12 10:00 · id 411090474
+- 88 carrusel vie 13 10:00 · id 411091056
