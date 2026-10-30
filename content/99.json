@@ -1,0 +1,25 @@
+{
+ "id": "99",
+ "type": "reel",
+ "date": "2026-11-18T18:00:00",
+ "photo": "img/99.jpg",
+ "frames": [
+  {
+   "kicker": "Ciencia",
+   "title": "Yogur, kéfir\n*y chucrut*"
+  },
+  {
+   "stamp": "CIENCIA",
+   "body": "Más fermentados, más variedad de bacterias en tu intestino."
+  },
+  {
+   "title": "Más diversidad,\n*menos inflamación*",
+   "body": "Ensayo de Stanford con 36 adultos. La fibra sola no lo consiguió."
+  },
+  {
+   "title": "Una ración\n*al día*",
+   "body": "Yogur natural, kéfir, chucrut o encurtidos sin azúcar."
+  }
+ ],
+ "caption": "Tu intestino también come.\n\nEn un ensayo de Stanford publicado en Cell, 36 adultos siguieron una dieta rica en fermentados o rica en fibra. Con los fermentados (yogur, kéfir, chucrut, kimchi), la diversidad de su microbiota fue subiendo y bajaron varios marcadores de inflamación. Con la fibra, la diversidad no cambió en ese tiempo.\n\nEs un estudio pequeño, pero apunta en una dirección fácil: añade un fermentado al día, sin azúcar. 🥛\n\nGuárdalo para tu próxima compra.\n\n#longevidad #microbiota #fermentados #nutricion"
+}

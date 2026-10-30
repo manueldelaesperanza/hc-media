@@ -1,0 +1,37 @@
+{
+ "id": "106",
+ "type": "carousel",
+ "date": "2026-11-22T10:00:00",
+ "cover": {
+  "kicker": "Hábitos",
+  "title": "Un hábito tarda\n*66 días*,\nno 21"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "96 personas,\n*un hábito nuevo*",
+   "body": "Eligieron algo sencillo (beber agua, comer fruta, correr) y lo repitieron cada día durante 12 semanas.",
+   "source": "Lally et al., Eur J Soc Psychol, 2010"
+  },
+  {
+   "kicker": "El resultado",
+   "title": "De media,\n*66 días*",
+   "body": "Es lo que tardó en volverse automático. **Pero varió mucho: de 18 a unos 254 días.**",
+   "source": "Lally et al., Eur J Soc Psychol, 2010"
+  },
+  {
+   "kicker": "La buena noticia",
+   "title": "Fallar un día\n*no lo rompe*",
+   "body": "Saltarse un día no afectó al resultado. **Lo que cuenta es volver al día siguiente.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Pequeño\n*y diario*",
+   "body": "Ata el hábito a algo que ya haces: después del café, 10 sentadillas. **Y date 2 meses, no 3 semanas.**"
+  }
+ ],
+ "caption": "Los 21 días para crear un hábito son un mito.\n\nEn un estudio publicado en el European Journal of Social Psychology, 96 personas eligieron un hábito sencillo y lo repitieron cada día durante 12 semanas. De media tardaron 66 días en hacerlo de forma automática, con mucha variación: de 18 a unos 254 días. Y saltarse un día no estropeaba el resultado.\n\nEmpieza pequeño, átalo a algo que ya haces y date 2 meses, no 3 semanas. 📅\n\n¿Qué hábito empiezas hoy? Cuéntanoslo. 👇\n\n#longevidad #habitos #constancia #bienestar",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/106.jpg",
+ "pos": "50% 35%"
+}

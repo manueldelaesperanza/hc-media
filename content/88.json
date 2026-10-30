@@ -1,0 +1,37 @@
+{
+ "id": "88",
+ "type": "carousel",
+ "date": "2026-11-13T10:00:00",
+ "cover": {
+  "kicker": "Movilidad",
+  "title": "Una caída\n*se entrena*\nantes de que pase"
+ },
+ "slides": [
+  {
+   "kicker": "El problema",
+   "title": "Las caídas, *el\nenemigo silencioso*",
+   "body": "Con la edad, las caídas son una de las primeras causas de lesión y de pérdida de autonomía. **Y muchas se pueden prevenir.**"
+  },
+  {
+   "kicker": "El estudio",
+   "title": "108 ensayos,\n*23.407 personas*",
+   "body": "Una revisión Cochrane analizó el ejercicio para prevenir caídas en mayores que viven en casa.",
+   "source": "Sherrington et al., Cochrane, 2019"
+  },
+  {
+   "kicker": "El resultado",
+   "title": "*−24%*\nde caídas",
+   "body": "Con ejercicios de equilibrio y funcionales. **Evidencia de certeza alta.**",
+   "source": "Sherrington et al., Cochrane, 2019"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Equilibrio\n*cada día*",
+   "body": "Lávate los dientes a una pierna, levántate de la silla sin manos y camina en línea recta. **Y añade fuerza de piernas.**"
+  }
+ ],
+ "caption": "Las caídas no son mala suerte: se pueden entrenar.\n\nUna revisión Cochrane de 108 ensayos con 23.407 mayores que viven en casa encontró que los ejercicios de equilibrio y funcionales reducen las caídas un 24%. La certeza de la evidencia es alta.\n\nEmpieza hoy: lávate los dientes a una pierna (cerca de un apoyo), levántate de la silla sin usar las manos y entrena fuerza de piernas 2 veces por semana. 🦶\n\nEnvíaselo a tus padres.\n\n#longevidad #equilibrio #caidas #envejecimientosaludable",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/88.jpg",
+ "pos": "50% 35%"
+}

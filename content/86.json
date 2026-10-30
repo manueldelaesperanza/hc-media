@@ -1,0 +1,37 @@
+{
+ "id": "86",
+ "type": "carousel",
+ "date": "2026-11-12T10:00:00",
+ "cover": {
+  "kicker": "Mente",
+  "title": "El ejercicio\n*también trata\nla depresión*"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "218 ensayos,\n*14.170 personas*",
+   "body": "Un metaanálisis en red publicado en el BMJ comparó distintos tipos de ejercicio en personas con depresión.",
+   "source": "Noetel et al., BMJ, 2024"
+  },
+  {
+   "kicker": "Los que más ayudaron",
+   "title": "Caminar, yoga\n*y fuerza*",
+   "body": "Caminar o correr, el yoga y el entrenamiento de fuerza fueron los que más redujeron los síntomas. **Cuanto más intenso, mejor efecto.**",
+   "source": "Noetel et al., BMJ, 2024"
+  },
+  {
+   "kicker": "Ojo",
+   "title": "Suma,\n*no sustituye*",
+   "body": "La calidad de la evidencia es baja: hacen falta ensayos mejores. **Si estás en tratamiento, no lo dejes: el ejercicio se añade.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Empieza\n*por andar*",
+   "body": "Un paseo rápido de 20–30 minutos, mejor con alguien. **Y pide ayuda profesional si lo necesitas.**"
+  }
+ ],
+ "caption": "Moverte también cuida tu cabeza.\n\nUn metaanálisis de 218 ensayos con 14.170 personas, publicado en el BMJ, comparó tipos de ejercicio en personas con depresión. Caminar o correr, el yoga y la fuerza fueron los que más redujeron los síntomas, y cuanto más intenso, mejor.\n\nCon perspectiva: la calidad de la evidencia es baja y el ejercicio suma, no sustituye. Si estás en tratamiento, no lo dejes. Y si lo estás pasando mal, pide ayuda. 💚\n\nEnvíaselo a alguien que necesite un paseo hoy.\n\n#longevidad #saludmental #ejercicio #bienestar",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/86.jpg",
+ "pos": "50% 30%"
+}

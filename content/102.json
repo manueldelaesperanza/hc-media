@@ -1,0 +1,37 @@
+{
+ "id": "102",
+ "type": "carousel",
+ "date": "2026-11-20T10:00:00",
+ "cover": {
+  "kicker": "Movimiento",
+  "title": "Moverte se asocia\ncon menos riesgo de\n*13 tipos de cáncer*"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "1,44 millones\n*de personas*",
+   "body": "12 estudios de EE. UU. y Europa compararon la actividad física en el tiempo libre con 26 tipos de cáncer.",
+   "source": "Moore et al., JAMA Intern Med, 2016"
+  },
+  {
+   "kicker": "El resultado",
+   "title": "Menos riesgo\n*en 13 de 26*",
+   "body": "Entre los más y los menos activos: **−42% en esófago, −27% en hígado, −26% en pulmón, −23% en riñón, −16% en colon.**",
+   "source": "Moore et al., JAMA Intern Med, 2016"
+  },
+  {
+   "kicker": "Ojo",
+   "title": "Con\n*perspectiva*",
+   "body": "Es una asociación, y en algunos cánceres influye el peso. **Pero 10 de las 13 relaciones se mantuvieron al tener en cuenta el peso.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "150 minutos\n*a la semana*",
+   "body": "Lo que recomienda la OMS, como mínimo. **Camina rápido, pedalea, nada o entrena: lo que vayas a mantener.**"
+  }
+ ],
+ "caption": "Moverte también es prevenir el cáncer.\n\nUn análisis de 12 estudios con 1,44 millones de personas, publicado en JAMA Internal Medicine, encontró que los más activos en su tiempo libre tenían menos riesgo en 13 de los 26 tipos de cáncer estudiados: un 42% menos de cáncer de esófago, 27% de hígado, 26% de pulmón, 23% de riñón y 16% de colon, entre otros.\n\nEs una asociación, pero muy amplia. Apunta a 150 minutos a la semana como mínimo, de lo que te guste. 🚴‍♀️\n\nCompártelo con quien dice que el ejercicio es solo para adelgazar.\n\n#longevidad #cancer #ejercicio #prevencion",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/102.jpg",
+ "pos": "50% 35%"
+}

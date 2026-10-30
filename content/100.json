@@ -1,0 +1,37 @@
+{
+ "id": "100",
+ "type": "carousel",
+ "date": "2026-11-19T10:00:00",
+ "cover": {
+  "kicker": "Día Internacional del Hombre",
+  "title": "8 hábitos,\n*hasta 24 años\nmás de vida*"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "719.147\n*veteranos*",
+   "body": "El Million Veteran Program de EE. UU. calculó cuánto vivía la gente según cuántos hábitos sanos tenía.",
+   "source": "Nguyen et al., Am J Clin Nutr, 2024"
+  },
+  {
+   "kicker": "Los 8 hábitos",
+   "title": "Lo de\n*siempre*",
+   "body": "No fumar, moverse, no beber en exceso, dormir bien, comer bien, gestionar el estrés, cuidar las relaciones **y no tener adicción a los opioides.**"
+  },
+  {
+   "kicker": "El resultado",
+   "title": "*+24 años* ellos,\n+20,5 ellas",
+   "body": "Es la esperanza de vida extra a los 40 años con los 8 hábitos frente a ninguno. **Cada hábito suma.**",
+   "source": "Nguyen et al., Am J Clin Nutr, 2024"
+  },
+  {
+   "kicker": "Ojo",
+   "title": "Con\n*perspectiva*",
+   "body": "Es una estimación en veteranos, con hábitos declarados por ellos. **Pero el mensaje es claro: no hace falta hacerlo todo para ganar.**"
+  }
+ ],
+ "caption": "8 hábitos. Hasta 24 años más de vida.\n\nUn estudio con 719.147 veteranos de EE. UU., publicado en el American Journal of Clinical Nutrition, calculó la esperanza de vida según 8 hábitos: no fumar, moverse, no beber en exceso, dormir bien, comer bien, gestionar el estrés, cuidar las relaciones y no tener adicción a los opioides. Con los 8 frente a ninguno, a los 40 años: 24 años más en hombres y 20,5 en mujeres.\n\nEs una estimación y en un grupo concreto, pero cada hábito sumaba. Hoy, Día Internacional del Hombre, elige uno y empieza. 💪\n\n¿Cuántos de los 8 cumples? Te leemos. 👇\n\n#longevidad #habitos #saludmasculina #diadelhombre",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/100.jpg",
+ "pos": "50% 30%"
+}

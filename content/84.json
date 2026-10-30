@@ -1,0 +1,37 @@
+{
+ "id": "84",
+ "type": "carousel",
+ "date": "2026-11-11T10:00:00",
+ "cover": {
+  "kicker": "Fuerza",
+  "title": "Tu apretón de\nmanos *predice\ncuánto vivirás*"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "139.691 personas\n*en 17 países*",
+   "body": "El estudio PURE midió la fuerza de agarre con un dinamómetro y siguió a los participantes unos 4 años.",
+   "source": "Leong et al., The Lancet, 2015"
+  },
+  {
+   "kicker": "El dato",
+   "title": "Cada 5 kg menos,\n*+16% de mortalidad*",
+   "body": "Y un 17% más de muerte cardiovascular. **Predijo la mortalidad mejor que la tensión arterial.**",
+   "source": "Leong et al., The Lancet, 2015"
+  },
+  {
+   "kicker": "La explicación",
+   "title": "No es\n*la mano*",
+   "body": "La fuerza de agarre es un reflejo de tu fuerza muscular general. **Lo que importa es el músculo de todo el cuerpo.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Entrena\n*el agarre*",
+   "body": "Fuerza 2 días por semana, peso muerto, remo y paseos del granjero con peso en cada mano. **Y cuelga de una barra.**"
+  }
+ ],
+ "caption": "Tu apretón de manos dice mucho de tu salud.\n\nEn el estudio PURE, publicado en The Lancet, se midió la fuerza de agarre de 139.691 personas de 17 países. Cada 5 kg menos de fuerza se asoció con un 16% más de mortalidad y un 17% más de muerte cardiovascular. Y predijo la mortalidad mejor que la tensión arterial.\n\nNo es por la mano: es un reflejo de tu fuerza general. Entrena fuerza 2 días por semana y añade peso muerto, remo y paseos con peso en las manos. ✊\n\nGuárdalo para tu próximo entrenamiento.\n\n#longevidad #fuerza #musculo #envejecimientosaludable",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/84.jpg",
+ "pos": "50% 40%"
+}

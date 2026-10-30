@@ -1,0 +1,36 @@
+{
+ "id": "80",
+ "type": "carousel",
+ "date": "2026-11-09T10:00:00",
+ "cover": {
+  "kicker": "Movember",
+  "title": "Los hombres\nviven *5 años\nmenos*"
+ },
+ "slides": [
+  {
+   "kicker": "El dato",
+   "title": "81,4 frente a\n*86,5 años*",
+   "body": "Es la esperanza de vida al nacer en España en 2024, según el INE. **Más de 5 años de diferencia entre hombres y mujeres.**",
+   "source": "INE, Movimiento Natural de la Población 2024"
+  },
+  {
+   "kicker": "Por qué",
+   "title": "Más riesgo,\n*menos médico*",
+   "body": "Influye la biología, pero también los hábitos: los hombres fuman y beben más, tienen más accidentes y van menos al médico. **Eso sí se puede cambiar.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Tres cosas\n*este mes*",
+   "body": "Mídete la tensión. Pide una analítica si hace años que no te la haces. **Y habla con alguien si no estás bien.**"
+  },
+  {
+   "kicker": "Movember",
+   "title": "Un bigote,\n*una conversación*",
+   "body": "Movember nació para hablar de la salud de los hombres: próstata, testículos y salud mental. **Empieza por la tuya.**"
+  }
+ ],
+ "caption": "En España, los hombres viven más de 5 años menos que las mujeres.\n\nSegún el INE, la esperanza de vida al nacer en 2024 fue de 81,4 años en hombres y 86,5 en mujeres. Parte es biología. Pero otra parte son hábitos: más tabaco, más alcohol, más accidentes y menos visitas al médico.\n\nEste Movember, tres gestos: mídete la tensión, hazte una analítica si hace años que no la pides y habla con alguien si no estás bien. 🥸\n\nEnvíaselo a un hombre al que quieras ver a los 90.\n\n#longevidad #movember #saludmasculina #prevencion",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/80.jpg",
+ "pos": "50% 25%"
+}

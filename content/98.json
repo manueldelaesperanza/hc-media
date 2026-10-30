@@ -1,0 +1,37 @@
+{
+ "id": "98",
+ "type": "carousel",
+ "date": "2026-11-18T10:00:00",
+ "cover": {
+  "kicker": "Cerebro",
+  "title": "Una vacuna\nque podría\n*proteger tu cerebro*"
+ },
+ "slides": [
+  {
+   "kicker": "El estudio",
+   "title": "Un experimento\n*natural en Gales*",
+   "body": "La vacuna del herpes zóster se ofreció solo a quienes nacieron a partir del 2 de septiembre de 1933. **Personas casi iguales, con y sin vacuna.**",
+   "source": "Eyting et al., Nature, 2025"
+  },
+  {
+   "kicker": "El resultado",
+   "title": "*−20%*\nde demencia",
+   "body": "En 7 años, los que pudieron vacunarse tuvieron un 20% menos de nuevos diagnósticos de demencia. **Más claro en mujeres.**",
+   "source": "Eyting et al., Nature, 2025"
+  },
+  {
+   "kicker": "Ojo",
+   "title": "Prometedor,\n*no definitivo*",
+   "body": "Es un diseño muy sólido, pero hacen falta ensayos que lo confirmen. **La vacuna, además, protege del herpes zóster, que es muy doloroso.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Pregunta\n*en tu centro*",
+   "body": "En España se ofrece a partir de cierta edad o con algunas enfermedades. **Pregunta si te toca.**"
+  }
+ ],
+ "caption": "Una vacuna que podría proteger tu cerebro.\n\nEn Gales, la vacuna del herpes zóster se ofreció solo a quienes habían nacido a partir del 2 de septiembre de 1933. Eso creó un experimento natural: personas casi iguales, unas con vacuna y otras sin ella. El estudio, publicado en Nature, encontró que en 7 años los que pudieron vacunarse tuvieron un 20% menos de nuevos diagnósticos de demencia, con un efecto más claro en mujeres.\n\nEs prometedor, pero faltan ensayos que lo confirmen. Pregunta en tu centro de salud si te corresponde. 💉\n\nEnvíaselo a tus padres.\n\n#longevidad #demencia #vacunas #cerebro",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/98.jpg",
+ "pos": "50% 35%"
+}

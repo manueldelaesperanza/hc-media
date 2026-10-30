@@ -1,0 +1,29 @@
+# Datos verificados (abstract en Europe PMC salvo indicación)
+
+- 83 Luz: Zheng N et al., Gen Psychiatr 2026;39(3):e70039 (online 24-jun-2026). 87.577 UK Biobank sin demencia, edad media 62,4, 57% mujeres, sensor 7 días, mediana 8,1 años, 741 demencias. >1000 lux de día: HR 0,84 (0,71–0,99). ~0,70 h/día (≈42 min) a ≥5000 lux: HR 0,83 (≈−17%). Luz nocturna: sin asociación. Hasta −41% en cronotipo nocturno, APOE4 o mucha luz nocturna. Observacional.
+- 81 Isométrico: Edwards JJ et al., Br J Sports Med 2023. 270 ECA, 15.827 participantes. Isométrico: −8,24/−4,00 mmHg. Sentadilla en pared, SUCRA 90,4% (mejor para la sistólica).
+- 82 Abdominales: Vispute SS et al., J Strength Cond Res 2011. 24 adultos sedentarios, 6 semanas, 5 días/sem, 7 ejercicios abdominales 2x10. Sin efecto en perímetro abdominal ni pliegues.
+- 84 Agarre: Leong DP et al., Lancet 2015;386:266-73 (PURE). 139.691 personas, 17 países, mediana 4 años. Cada 5 kg menos: mortalidad total HR 1,16 (1,13–1,20); CV 1,17; infarto 1,07; ictus 1,09. Predijo mortalidad mejor que la tensión sistólica.
+- 85 VILPA: Stamatakis E et al., Nat Med 2022;28:2521-9. 25.241 no deportistas UK Biobank, edad media 61,8, 6,9 años. ~3 ráfagas/día de 1–2 min: −38–40% mortalidad total y por cáncer, −48–49% CV.
+- 86 Depresión: Noetel M et al., BMJ 2024;384:e075847. 218 ECA, 14.170 personas. Caminar/correr g=−0,62; yoga −0,55; fuerza −0,49; aeróbico mixto −0,43; taichí −0,42. Certeza baja (caminar) o muy baja.
+- 88 Caídas: Sherrington C et al., Cochrane 2019. 108 ECA, 23.407 personas. Equilibrio y ejercicios funcionales: RaR 0,76 (0,70–0,81) → −24% de caídas, certeza alta.
+- 89 Ayunas: Schoenfeld BJ et al., JISSN 2014. 20 mujeres jóvenes, 4 semanas, 1 h cardio 3x/sem + dieta hipocalórica. Sin diferencias entre ayunas y comida.
+- 80 Hombres: INE 2024 (nota nov-2025, vía EFE/El Observador): hombres 81,38; mujeres 86,53; total 84,01 → diferencia 5,15 años.
+- 87 Refrescos: Malik VS et al., Circulation 2019. 37.716 hombres (HPFS) + 80.647 mujeres (NHS), hasta 34 años. ≥2 al día vs <1 al mes: mortalidad total HR 1,21 (1,13–1,28); CV 1,31 (1,15–1,50); cáncer 1,16. Edulcorados: solo en la categoría más alta (1,04), confirmar.
+- 90 DPP: Knowler WC et al., NEJM 2002. 3.234 adultos con glucosa alterada, 2,8 años. Objetivos: −7% de peso y ≥150 min/sem. Estilo de vida −58% (48–66); metformina −31%.
+- 92 Duchas frías: Buijze GA et al., PLOS ONE 2016. 3.018 adultos 18–65, 30 días, final de 30/60/90 s de agua fría. Bajas laborales −29% (IRR 0,71); días de enfermedad sin cambio; sin efectos adversos graves.
+- 93 Sueño finde: Åkerstedt T et al., J Sleep Res 2019. 43.880 suecos, 13 años. <65 años: dormir ≤5 h todos los días HR 1,65 vs 6–7 h; ≤5 h entre semana + largo el finde = sin diferencia; ≥8 h siempre HR 1,25. ≥65: sin asociación.
+- 94 Apnea: Benjafield AV et al., Lancet Respir Med 2019. 936 millones de adultos 30–69 con apnea (IAH≥5); 425 millones moderada-grave.
+- 95 Correr: Alentorn-Geli E et al., JOSPT 2017. 17 estudios, 114.829 personas. Artrosis de cadera/rodilla: corredores recreativos 3,5%; sedentarios 10,2%; competición 13,3%.
+- 96 Sal: American Heart Association (Sodium Breakup): sal de mesa y la mayoría de sales marinas ~40% sodio; minerales traza mínimos. 61% creía que la marina tiene menos sodio (encuesta AHA).
+- 98 Zóster: Eyting M et al., Nature 2025;641:438-446. Gales, elegibilidad por fecha de nacimiento (2-sep-1933). 7 años: −3,5 puntos de nuevos diagnósticos de demencia = −20% relativo (6,5–33,4). Más efecto en mujeres.
+- 99 Fermentados: Wastyk HC et al., Cell 2021 (Stanford). 36 adultos, 17 semanas. Fermentados: diversidad de microbiota sube y bajan marcadores de inflamación. Fibra: diversidad estable.
+- 100 8 hábitos: Nguyen XT et al., Am J Clin Nutr 2024 (Million Veteran Program). 719.147 veteranos 40–99. 8 hábitos (no fumar, actividad física, no beber en exceso, buen sueño, buena dieta, gestionar estrés, relaciones, sin adicción a opioides): HR 0,13 vs ninguno. A los 40 años: +24,0 años hombres, +20,5 mujeres.
+- 101 LIFTMOR: Watson SL et al., JBMR 2018. 101 mujeres posmenopáusicas con baja masa ósea, 65±5 años, 8 meses, 2x30 min/sem, 5x5 >85% 1RM supervisado. Lumbar +2,9% vs −1,2%; cuello femoral +0,3% vs −1,9%. 1 efecto adverso leve.
+- 102 Cáncer: Moore SC et al., JAMA Intern Med 2016. 1,44 millones, 12 cohortes EEUU/Europa, 186.932 cánceres. Actividad alta vs baja: menos riesgo en 13 de 26 cánceres (esófago HR 0,58; hígado 0,73; pulmón 0,74; riñón 0,77; cardias 0,78; endometrio 0,79; leucemia mieloide 0,80; mieloma 0,83; colon 0,84...).
+- 103 Gluten: Lebwohl B et al., BMJ 2017. 64.714 mujeres + 45.303 hombres sin celiaquía, 26 años. Gluten y enfermedad coronaria: HR 0,95 (0,88–1,02) quintil alto vs bajo (sin relación). Evitarlo puede quitar cereales integrales; no recomendar sin celiaquía.
+- 104 Té: Inoue-Choi M et al., Ann Intern Med 2022. 498.043 UK Biobank 40–69, 11,2 años. 2–3 tazas/día HR 0,87 (0,84–0,91) vs no tomar → −13%. Igual con o sin café.
+- 105 Cadencia: Tudor-Locke C et al., IJBNPA 2019 (CADENCE-Adults). 76 adultos 21–40. 100 pasos/min ≈ intensidad moderada (3 METs); 130 ≈ vigorosa.
+- 106 Hábitos: Lally P et al., Eur J Soc Psychol 2010 (vía BPS Research Digest). 96 personas (82 terminaron), 84 días. Media 66 días hasta el automatismo; rango 18–254 (254 extrapolado). Saltarse un día no afectó.
+- 107 Nudillos: deWeber K et al., J Am Board Fam Med 2011. 215 personas 50–89 con radiografía. Artrosis 18,1% en quienes crujen vs 21,5% en quienes no (p=0,55). Sin relación.
+- 91 Azúcar moreno: pendiente fuente de composición (BEDCA/USDA). 

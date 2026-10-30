@@ -1,0 +1,36 @@
+{
+ "id": "94",
+ "type": "carousel",
+ "date": "2026-11-16T10:00:00",
+ "cover": {
+  "kicker": "Sueño",
+  "title": "Si roncas,\n*mira esto*"
+ },
+ "slides": [
+  {
+   "kicker": "El dato",
+   "title": "936 millones\n*de adultos*",
+   "body": "Tienen apnea del sueño en el mundo, entre los 30 y los 69 años. **425 millones, moderada o grave.**",
+   "source": "Benjafield et al., Lancet Respir Med, 2019"
+  },
+  {
+   "kicker": "Qué es",
+   "title": "Pausas\n*al respirar*",
+   "body": "La vía aérea se cierra mientras duermes y el oxígeno baja una y otra vez. **La mayoría no lo sabe.**"
+  },
+  {
+   "kicker": "Las señales",
+   "title": "Ronquidos,\n*pausas, cansancio*",
+   "body": "Roncar fuerte, que te digan que dejas de respirar, despertarte cansado o dormirte de día. **Y la tensión alta difícil de controlar.**"
+  },
+  {
+   "kicker": "Qué hacer",
+   "title": "Pide\n*un estudio*",
+   "body": "Cuéntaselo a tu médico: una prueba de sueño lo confirma. **Tiene tratamiento, y se nota.**"
+  }
+ ],
+ "caption": "Si roncas fuerte, esto te interesa.\n\nUn análisis publicado en The Lancet Respiratory Medicine estimó que 936 millones de adultos de 30 a 69 años tienen apnea del sueño en el mundo, y 425 millones de forma moderada o grave. La mayoría no lo sabe.\n\nSeñales: roncar fuerte, pausas al respirar mientras duermes, despertarte cansado, dormirte de día o tener la tensión alta difícil de controlar. Si te suena, cuéntaselo a tu médico: una prueba de sueño lo confirma y tiene tratamiento. 😴\n\nEnvíaselo a quien no te deja dormir.\n\n#longevidad #sueño #apnea #ronquidos",
+ "end_note": "Medimos todo esto en The Longevity Weekend · enlace en la bio",
+ "photo": "img/94.jpg",
+ "pos": "50% 40%"
+}

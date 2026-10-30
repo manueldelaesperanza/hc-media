@@ -116,7 +116,7 @@ def deco_corner():
 
 def slide_cover_photo(s, photo):
     return page(
-        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:250px;width:1080px;height:1100px;object-fit:cover'>"
+        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:250px;width:1080px;height:1100px;object-fit:cover;object-position:{s.get('pos', '50% 20%')}'>"
         f"<div style='position:absolute;inset:0;background:linear-gradient(180deg,{BG} 0%,{BG} 22%,rgba(20,24,20,.55) 36%,rgba(20,24,20,0) 52%,rgba(20,24,20,0) 82%,rgba(20,24,20,.75) 100%)'></div>"
         + header(center=True)
         + f"<div style='position:absolute;top:150px;left:60px;right:60px;text-align:center;z-index:5'>"
@@ -186,9 +186,10 @@ def build_carousel(spec, out):
 
 
 # ---------------------------------------------------------------- reel
-def reel_frame(photo, inner, zoom=1.0):
+def reel_frame(photo, inner, zoom=1.0, pos='50% 12%', top=0):
+    POS = pos
     return page(
-        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:0;width:1080px;height:1240px;object-fit:cover;transform:scale({zoom});transform-origin:50% 40%'>"
+        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:{top}px;width:1080px;height:1240px;object-fit:cover;object-position:{POS};transform:scale({zoom});transform-origin:50% 40%;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 {min(top,1)*220}px)'>"
         f"<div style='position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,20,.55) 0%,rgba(20,24,20,0) 14%,rgba(20,24,20,0) 42%,rgba(20,24,20,.85) 58%,{BG} 66%)'></div>"
         + f"<div style='position:absolute;top:150px;left:0;right:0;display:flex;justify-content:center;z-index:5'><div class='brand' style='font-size:24px'>{logo_svg(44)}HEALTHSPAN CLUB</div></div>"
         + f"<div style='position:absolute;left:90px;right:90px;top:1050px;text-align:center;z-index:5'>{inner}</div>",
@@ -198,18 +199,22 @@ def reel_frame(photo, inner, zoom=1.0):
 def reel_pages(spec):
     p = spec["photo"]
     f = spec["frames"]
+    pos = spec.get("pos", "50% 0%")
+    _rf = reel_frame
+    top = spec.get("top", 150)
+    reel_frame_ = lambda ph, inner, zoom=1.0: _rf(ph, inner, zoom, pos, top)
     stamp = f[1]
     pages = [
-        reel_frame(p, f"<div class='kicker' style='font-size:30px'>{md(f[0].get('kicker', '¿Mito o ciencia?'))}</div>"
+        reel_frame_(p, f"<div class='kicker' style='font-size:30px'>{md(f[0].get('kicker', '¿Mito o ciencia?'))}</div>"
                       f"<div class='title' style='font-size:{f[0].get('size', 104)}px;margin-top:30px'>{md(f[0]['title'])}</div>"),
-        reel_frame(p, f"<div style='display:inline-block;transform:rotate(-6deg);border:10px solid {GOLD};border-radius:20px;padding:10px 46px;"
+        reel_frame_(p, f"<div style='display:inline-block;transform:rotate(-6deg);border:10px solid {GOLD};border-radius:20px;padding:10px 46px;"
                       f"color:{GOLD};font-weight:800;font-size:{stamp.get('size', 150)}px;letter-spacing:.02em'>{md(stamp['stamp'])}</div>"
                       f"<div class='body' style='margin-top:56px;font-size:38px'>{md(stamp['body'])}</div>", 1.02),
-        reel_frame(p, f"<div class='title' style='font-size:{f[2].get('size', 84)}px'>{md(f[2]['title'])}</div>"
+        reel_frame_(p, f"<div class='title' style='font-size:{f[2].get('size', 84)}px'>{md(f[2]['title'])}</div>"
                       f"<div class='body' style='margin-top:30px;font-size:36px'>{md(f[2]['body'])}</div>", 1.04),
-        reel_frame(p, f"<div class='title' style='font-size:{f[3].get('size', 84)}px'>{md(f[3]['title'])}</div>"
+        reel_frame_(p, f"<div class='title' style='font-size:{f[3].get('size', 84)}px'>{md(f[3]['title'])}</div>"
                       f"<div class='body' style='margin-top:30px;font-size:36px'>{md(f[3]['body'])}</div>", 1.06),
-        page(f"<div style='position:absolute;left:-560px;top:180px'>{deco(2200)}</div>"
+        page(f"<div style='position:absolute;left:-210px;top:40px'>{deco(1500)}</div>"
              f"<div style='position:absolute;top:640px;left:0;right:0;text-align:center;z-index:5'>{logo_svg(160)}"
              f"<div class='title' style='font-size:116px;margin-top:40px'>SÍGUENOS PARA<br><span class='g'>VIVIR MÁS</span></div>"
              f"<div style='font-size:42px;font-weight:300;margin-top:40px'>Ciencia de la longevidad, sin humo.</div>"
