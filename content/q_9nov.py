@@ -271,7 +271,8 @@ reel("104", "2026-11-21T10:00:00",
       {"stamp": "CIENCIA", "body": "Té negro y mortalidad: una asociación modesta pero clara."},
       {"title": "*−13%*\nde mortalidad", "body": "Con 2–3 tazas al día. 498.043 personas del UK Biobank, 11 años."},
       {"title": "Sin azúcar\n*y sin prisa*", "body": "Y si te quita el sueño, antes de comer."}],
-     "¿Eres más de té? Buenas noticias.\n\nEn un estudio del UK Biobank con 498.043 personas seguidas 11 años, publicado en Annals of Internal Medicine, quienes tomaban 2–3 tazas de té al día (sobre todo negro) tenían un 13% menos de mortalidad que quienes no tomaban. Daba igual si también tomaban café.\n\nEs una asociación y el efecto es modesto. Tómalo sin azúcar, y si te quita el sueño, mejor antes de comer. 🍵\n\nEtiqueta a tu compañero de té.\n\n#longevidad #te #nutricion #habitossaludables")
+     "¿Eres más de té? Buenas noticias.\n\nEn un estudio del UK Biobank con 498.043 personas seguidas 11 años, publicado en Annals of Internal Medicine, quienes tomaban 2–3 tazas de té al día (sobre todo negro) tenían un 13% menos de mortalidad que quienes no tomaban. Daba igual si también tomaban café.\n\nEs una asociación y el efecto es modesto. Tómalo sin azúcar, y si te quita el sueño, mejor antes de comer. 🍵\n\nEtiqueta a tu compañero de té.\n\n#longevidad #te #nutricion #habitossaludables",
+     top=0, pos="50% 80%")
 
 reel("105", "2026-11-21T18:00:00",
      [{"kicker": "Ciencia", "title": "¿Caminas a\n*100 pasos\npor minuto*?"},
