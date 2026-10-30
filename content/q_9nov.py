@@ -191,7 +191,7 @@ reel("95", "2026-11-16T18:00:00",
       {"stamp": "MITO", "body": "Correr por afición se asoció con menos artrosis, no más."},
       {"title": "3,5% frente\n*a 10,2%*", "body": "Artrosis de cadera o rodilla: corredores frente a sedentarios. 114.829 personas."},
       {"title": "Empieza suave,\n*sube poco a poco*", "body": "Y entrena fuerza de piernas."}],
-     "“No corras, que te vas a cargar las rodillas”. Mito.\n\nUn metaanálisis de 17 estudios con 114.829 personas, publicado en el Journal of Orthopaedic & Sports Physical Therapy, encontró artrosis de cadera o rodilla en el 3,5% de los corredores por afición, frente al 10,2% de las personas sedentarias. Solo en corredores de competición durante años subía al 13,3%.\n\nCorrer con cabeza no castiga tus articulaciones: empieza suave, sube poco a poco y entrena fuerza de piernas. 🏃‍♂️\n\nEnvíaselo a quien te dice que correr es malo.\n\n#longevidad #correr #rodillas #mitoociencia")
+     "“No corras, que te vas a cargar las rodillas”. Mito.\n\nUn metaanálisis de 17 estudios con 114.829 personas, publicado en el Journal of Orthopaedic & Sports Physical Therapy, encontró artrosis de cadera o rodilla en el 3,5% de los corredores por afición, frente al 10,2% de las personas sedentarias. En corredores de competición subía al 13,3%.\n\nCorrer con cabeza no castiga tus articulaciones: empieza suave, sube poco a poco y entrena fuerza de piernas. 🏃‍♂️\n\nEnvíaselo a quien te dice que correr es malo.\n\n#longevidad #correr #rodillas #mitoociencia")
 
 reel("96", "2026-11-17T10:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“La sal marina\n*es más sana*”"},
