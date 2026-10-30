@@ -153,10 +153,9 @@ car("90", "2026-11-14T10:00:00",
 reel("91", "2026-11-14T18:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“El azúcar\nmoreno *es más\nsano*”"},
       {"stamp": "MITO", "body": "Es azúcar con un poco de melaza. Casi lo mismo."},
-      {"title": "Casi las mismas\n*calorías*", "body": "Los minerales que aporta son mínimos."},
+      {"title": "194 frente a\n*190 kcal*", "body": "Por cada 50 g. Y una cucharada da menos del 1% de los minerales que necesitas."},
       {"title": "Menos azúcar,\n*del color que sea*", "body": "Y más fruta entera."}],
-     "“Uso azúcar moreno porque es más sano”. Mito.\n\nEl azúcar moreno es azúcar blanco con un poco de melaza, que le da el color y el sabor. Aporta casi las mismas calorías y su cantidad de minerales es tan pequeña que no cambia nada en tu dieta.\n\nEl problema no es el color: es la cantidad. Reduce el azúcar añadido, del tipo que sea. 🥄\n\nEnvíaselo a quien pide el sobre de azúcar moreno.\n\n#longevidad #azucar #mitoociencia #nutricion",
-     verify="Falta fuente de composición (BEDCA/USDA)")
+     "“Uso azúcar moreno porque es más sano”. Mito.\n\nEl azúcar moreno es azúcar con un poco de melaza, que le da el color y el sabor. Según el Consejo Europeo de Información sobre la Alimentación (EUFIC), 50 g de blanco aportan unas 194 kcal y 50 g de moreno, unas 190. Y una cucharada de moreno da menos del 1% de los minerales que necesitas al día.\n\nEl problema no es el color: es la cantidad. Reduce el azúcar añadido, del tipo que sea. 🥄\n\nEnvíaselo a quien pide el sobre de azúcar moreno.\n\n#longevidad #azucar #mitoociencia #nutricion")
 
 reel("92", "2026-11-15T10:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“Las duchas\nfrías *te hacen\nenfermar menos*”"},

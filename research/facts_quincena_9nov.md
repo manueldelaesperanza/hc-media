@@ -26,4 +26,4 @@
 - 105 Cadencia: Tudor-Locke C et al., IJBNPA 2019 (CADENCE-Adults). 76 adultos 21–40. 100 pasos/min ≈ intensidad moderada (3 METs); 130 ≈ vigorosa.
 - 106 Hábitos: Lally P et al., Eur J Soc Psychol 2010 (vía BPS Research Digest). 96 personas (82 terminaron), 84 días. Media 66 días hasta el automatismo; rango 18–254 (254 extrapolado). Saltarse un día no afectó.
 - 107 Nudillos: deWeber K et al., J Am Board Fam Med 2011. 215 personas 50–89 con radiografía. Artrosis 18,1% en quienes crujen vs 21,5% en quienes no (p=0,55). Sin relación.
-- 91 Azúcar moreno: pendiente fuente de composición (BEDCA/USDA). 
+- 91 Azúcar moreno: EUFIC (eufic.org, "Is brown sugar healthier than white sugar?"). Ambos >94% sacarosa. 50 g: blanco ~194 kcal, moreno ~190. Una cucharada de moreno <1% de las necesidades de minerales. Conclusión: no es más sano.
