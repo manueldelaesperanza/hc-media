@@ -242,7 +242,7 @@ reel("101", "2026-11-19T18:00:00",
       {"stamp": "MITO", "body": "Bien supervisadas, las pesas fortalecen el hueso a cualquier edad."},
       {"title": "+2,9% de hueso\n*en la columna*", "body": "Frente a −1,2%. 101 mujeres de 65 años con baja masa ósea, 8 meses."},
       {"title": "Fuerza,\n*con técnica*", "body": "2 sesiones de 30 minutos a la semana. Con un profesional."}],
-     "“A tu edad, nada de pesas”. Mito.\n\nEn el ensayo LIFTMOR, publicado en el Journal of Bone and Mineral Research, 101 mujeres de unos 65 años con baja masa ósea entrenaron fuerza intensa y supervisada 2 veces por semana, 30 minutos, durante 8 meses. Su hueso de la columna mejoró un 2,9%, mientras en el grupo control bajó un 1,2%. Solo hubo un efecto adverso leve.\n\nLa clave es la técnica y la supervisión. Si tienes osteoporosis, empieza con un profesional. 🏋️‍♀️\n\nEnvíaselo a tu madre.\n\n#longevidad #fuerza #osteoporosis #mitoociencia")
+     "“A tu edad, nada de pesas”. Mito.\n\nEn el ensayo LIFTMOR, publicado en el Journal of Bone and Mineral Research, participaron 101 mujeres de unos 65 años con baja masa ósea. La mitad entrenó fuerza intensa y supervisada 2 veces por semana, 30 minutos, durante 8 meses. Su densidad ósea en la columna subió un 2,9%, mientras en el grupo control bajó un 1,2%. Solo hubo un efecto adverso leve.\n\nLa clave es la técnica y la supervisión. Si tienes osteoporosis, empieza con un profesional. 🏋️‍♀️\n\nEnvíaselo a tu madre.\n\n#longevidad #fuerza #osteoporosis #mitoociencia")
 
 car("102", "2026-11-20T10:00:00",
     {"kicker": "Movimiento", "title": "Moverte se asocia\ncon menos riesgo de\n*13 tipos de cáncer*"},
