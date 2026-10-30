@@ -246,7 +246,7 @@ reel("101", "2026-11-19T18:00:00",
      "“A tu edad, nada de pesas”. Mito.\n\nEn el ensayo LIFTMOR, publicado en el Journal of Bone and Mineral Research, participaron 101 mujeres de unos 65 años con baja masa ósea. La mitad entrenó fuerza intensa y supervisada 2 veces por semana, 30 minutos, durante 8 meses. Su densidad ósea en la columna subió un 2,9%, mientras en el grupo control bajó un 1,2%. Solo hubo un efecto adverso leve.\n\nLa clave es la técnica y la supervisión. Si tienes osteoporosis, empieza con un profesional. 🏋️‍♀️\n\nEnvíaselo a tu madre.\n\n#longevidad #fuerza #osteoporosis #mitoociencia")
 
 car("102", "2026-11-20T10:00:00",
-    {"kicker": "Movimiento", "title": "Moverte se asocia\ncon menos riesgo de\n*13 tipos de cáncer*"},
+    {"kicker": "Movimiento", "title": "13 cánceres\n*menos frecuentes*\nen los activos"},
     [{"kicker": "El estudio", "title": "1,44 millones\n*de personas*",
       "body": "12 estudios de EE. UU. y Europa compararon la actividad física en el tiempo libre con 26 tipos de cáncer.",
       "source": "Moore et al., JAMA Intern Med, 2016"},
