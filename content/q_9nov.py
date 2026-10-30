@@ -261,7 +261,7 @@ car("102", "2026-11-20T10:00:00",
 
 reel("103", "2026-11-20T18:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“Quitar el gluten\n*es más sano*”"},
-      {"stamp": "MITO", "body": "Si no eres celíaco ni intolerante, no aporta beneficio."},
+      {"stamp": "MITO", "body": "Sin celiaquía, no se ha visto que proteja tu corazón."},
       {"title": "110.017 personas,\n*26 años*", "body": "Más o menos gluten: el mismo riesgo de infarto."},
       {"title": "Lo que sí cuenta:\n*integrales*", "body": "Quitar el gluten puede quitarte cereales integrales."}],
      "“Como sin gluten porque es más sano”. Mito (si no eres celíaco).\n\nEn un estudio de Harvard con 110.017 adultos sin celiaquía seguidos 26 años, publicado en el BMJ, la cantidad de gluten no se relacionó con el riesgo de infarto. Y los autores avisan: evitarlo sin necesidad puede hacerte comer menos cereales integrales, que sí se asocian con menos riesgo.\n\nSi sospechas celiaquía, no lo quites antes de hacerte las pruebas. 🌾\n\nEnvíaselo a quien compra todo \"sin gluten\".\n\n#longevidad #gluten #nutricion #mitoociencia")
