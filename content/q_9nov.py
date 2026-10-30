@@ -6,6 +6,7 @@ from pathlib import Path
 D = Path(__file__).parent
 END_TLW = "Medimos todo esto en The Longevity Weekend · enlace en la bio"
 END_HH = "Cada martes, la noticia de longevidad de la semana"
+END_GEN = "Cada día, un hábito con ciencia detrás"
 
 P = []  # pieces
 
@@ -37,7 +38,7 @@ car("80", "2026-11-09T10:00:00",
      {"kicker": "Movember", "title": "Un bigote,\n*una conversación*",
       "body": "Movember nació para hablar de la salud de los hombres: próstata, testículos y salud mental. **Empieza por la tuya.**"}],
     "En España, los hombres viven más de 5 años menos que las mujeres.\n\nSegún el INE, la esperanza de vida al nacer en 2024 fue de 81,4 años en hombres y 86,5 en mujeres. Parte es biología. Pero otra parte son hábitos: más tabaco, más alcohol, más accidentes y menos visitas al médico.\n\nEste Movember, tres gestos: mídete la tensión, hazte una analítica si hace años que no la pides y habla con alguien si no estás bien. 🥸\n\nEnvíaselo a un hombre al que quieras ver a los 90.\n\n#longevidad #movember #saludmasculina #prevencion",
-    pos="50% 25%")
+    end=END_GEN, pos="50% 25%")
 
 reel("81", "2026-11-09T18:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“Para bajar la\ntensión, *solo\nsirve correr*”"},
@@ -104,7 +105,7 @@ car("86", "2026-11-12T10:00:00",
      {"kicker": "Qué hacer", "title": "Empieza\n*por andar*",
       "body": "Un paseo rápido de 20–30 minutos, mejor con alguien. **Y pide ayuda profesional si lo necesitas.**"}],
     "Moverte también cuida tu cabeza.\n\nUn metaanálisis de 218 ensayos con 14.170 personas, publicado en el BMJ, comparó tipos de ejercicio en personas con depresión. Caminar o correr, el yoga y la fuerza fueron los que más redujeron los síntomas, y cuanto más intenso, mejor.\n\nCon perspectiva: la calidad de la evidencia es baja y el ejercicio suma, no sustituye. Si estás en tratamiento, no lo dejes. Y si lo estás pasando mal, pide ayuda. 💚\n\nEnvíaselo a alguien que necesite un paseo hoy.\n\n#longevidad #saludmental #ejercicio #bienestar",
-    pos="50% 30%")
+    end=END_GEN, pos="50% 30%")
 
 reel("87", "2026-11-12T18:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“Un refresco\nal día *no hace\nnada*”"},
@@ -213,7 +214,7 @@ car("98", "2026-11-18T10:00:00",
      {"kicker": "Qué hacer", "title": "Pregunta\n*en tu centro*",
       "body": "En España se ofrece a partir de cierta edad o con algunas enfermedades. **Pregunta si te toca.**"}],
     "Una vacuna que podría proteger tu cerebro.\n\nEn Gales, la vacuna del herpes zóster se ofreció solo a quienes habían nacido a partir del 2 de septiembre de 1933. Eso creó un experimento natural: personas casi iguales, unas con vacuna y otras sin ella. El estudio, publicado en Nature, encontró que en 7 años los que pudieron vacunarse tuvieron un 20% menos de nuevos diagnósticos de demencia, con un efecto más claro en mujeres.\n\nEs prometedor, pero faltan ensayos que lo confirmen. Pregunta en tu centro de salud si te corresponde. 💉\n\nEnvíaselo a tus padres.\n\n#longevidad #demencia #vacunas #cerebro",
-    pos="50% 35%")
+    end=END_GEN, pos="50% 35%")
 
 reel("99", "2026-11-18T18:00:00",
      [{"kicker": "Ciencia", "title": "Yogur, kéfir\n*y chucrut*"},
@@ -295,7 +296,7 @@ car("106", "2026-11-22T10:00:00",
      {"kicker": "Qué hacer", "title": "Pequeño\n*y diario*",
       "body": "Ata el hábito a algo que ya haces: después del café, 10 sentadillas. **Y date 2 meses, no 3 semanas.**"}],
     "Los 21 días para crear un hábito son un mito.\n\nEn un estudio publicado en el European Journal of Social Psychology, 96 personas eligieron un hábito sencillo y lo repitieron cada día durante 12 semanas. De media tardaron 66 días en hacerlo de forma automática, con mucha variación: de 18 a unos 254 días. Y saltarse un día no estropeaba el resultado.\n\nEmpieza pequeño, átalo a algo que ya haces y date 2 meses, no 3 semanas. 📅\n\n¿Qué hábito empiezas hoy? Cuéntanoslo. 👇\n\n#longevidad #habitos #constancia #bienestar",
-    pos="50% 35%")
+    end=END_GEN, pos="50% 35%")
 
 reel("107", "2026-11-22T18:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“Crujirte los\nnudillos *da\nartrosis*”"},
