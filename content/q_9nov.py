@@ -195,7 +195,7 @@ reel("95", "2026-11-16T18:00:00",
 
 reel("96", "2026-11-17T10:00:00",
      [{"kicker": "¿Mito o ciencia?", "title": "“La sal marina\n*es más sana*”"},
-      {"stamp": "MITO", "body": "Tiene el mismo sodio por gramo que la de mesa."},
+      {"stamp": "MITO", "body": "Tiene prácticamente el mismo sodio que la de mesa."},
       {"title": "Alrededor de\n*un 40% de sodio*", "body": "En las dos. Sus minerales son trazas."},
       {"title": "Menos sal,\n*más hierbas*", "body": "Limón, especias y ajo dan sabor sin sodio."}],
      "“Uso sal marina, que es más sana”. Mito.\n\nSegún la American Heart Association, la sal de mesa y la mayoría de sales marinas tienen alrededor de un 40% de sodio. Los minerales de la marina están en cantidades tan pequeñas que no aportan nada que no te dé una dieta normal.\n\nEl problema es la cantidad, sobre todo la que viene escondida en pan, embutidos y comida preparada. Prueba con limón, hierbas y especias. 🧂\n\nEnvíaselo a quien tiene el salero de sal rosa.\n\n#longevidad #sal #tension #mitoociencia")
