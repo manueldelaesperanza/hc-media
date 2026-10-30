@@ -23,3 +23,4 @@
 - 90 carrusel sáb 14 10:00 · id 411091849
 - 94 carrusel lun 16 10:00 · id 411092474
 - 98 carrusel mié 18 10:00 · id 411093384
+- 100 carrusel jue 19 10:00 · id 411094047
