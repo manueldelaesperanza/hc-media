@@ -1,0 +1,8 @@
+{"type": "carousel", "image": null, "slides": [
+ {"kind": "news", "label": "HEALTHSPAN HOY · 10 NOV", "title": "Menos de <g>42 minutos</g> de luz al día, más riesgo de demencia", "size": 88, "sub": "87.577 personas llevaron un sensor de luz en la muñeca."},
+ {"kind": "text", "kicker": "El estudio", "big": "87.577", "bigsize": 190, "title": "personas del UK Biobank", "body": "Llevaron un sensor de luz en la muñeca durante 7 días y se les siguió una mediana de 8 años. 741 desarrollaron demencia.", "source": "General Psychiatry, junio de 2026"},
+ {"kind": "text", "kicker": "El dato", "big": "−17%", "title": "de riesgo de demencia", "body": "en quienes pasaban al menos 42 minutos al día con luz intensa, la de estar al aire libre de día."},
+ {"kind": "text", "kicker": "Lo más llamativo", "title": "Tener poca luz de día predijo la demencia mejor que <g>6 factores de riesgo clásicos</g>", "size": 64, "body": "Entre ellos, la obesidad, el alcohol o los golpes en la cabeza. La luz por la noche no mostró relación."},
+ {"kind": "text", "kicker": "Con perspectiva", "title": "Es una asociación, <g>no una prueba</g>", "body": "Quien sale más a la calle también suele moverse más y estar más sano. Aun así, encaja con lo que sabemos del reloj interno."},
+ {"kind": "text", "kicker": "Qué hacer", "title": "Ahora que <g>anochece antes</g>", "body": "Sal al exterior por la mañana, aunque esté nublado. Suma unos 40 minutos de luz al día: paseo, terraza o ir andando. Dentro de casa, la luz se queda corta."},
+ {"kind": "cta"}]}

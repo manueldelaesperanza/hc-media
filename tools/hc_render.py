@@ -1,279 +1,215 @@
-"""Healthspan Club renderer: carousels (1080x1350), Healthspan Hoy, reels (1080x1920, 12 s).
+#!/usr/bin/env python3
+"""Healthspan Club · plantillas de carrusel (1080x1350) y reel (1080x1920, 12 s).
 
-Usage:
-  python3 tools/hc_render.py content/NN.json          -> out/NN/ (slides or reel.mp4 + portada.jpg)
+Uso:
+  python3 tools/hc_render.py spec.json OUT_DIR
 
-Spec (JSON):
-  {"id": "80", "type": "carousel" | "reel",
-   "photo": "img/80.png",              # optional for carousels (typographic cover if missing)
-   ... see build_carousel / build_reel}
-Text markup: *gold words*  **bold words**  \n = line break.
+spec.json (carrusel):
+  {"type": "carousel", "image": "ruta/portada.png" | null,
+   "slides": [
+     {"kind": "cover", "kicker": "EL DATO", "title": "TU <g>AGARRE</g> PREDICE", "sub": "..."},
+     {"kind": "news",  "label": "HEALTHSPAN HOY · 10 NOV", "title": "...", "sub": "..."},
+     {"kind": "text",  "kicker": "...", "big": "-16%", "title": "...", "body": "..."},
+     {"kind": "cta",   "title": "GUÁRDALO Y <g>EMPIEZA HOY</g>", "sub": "..."}]}
+spec.json (reel):
+  {"type": "reel", "image": "ruta/imagen.png",
+   "beats": [{"kicker": "...", "title": "...", "sub": "..."}, x4]}
+  -> OUT_DIR/reel.mp4 (4 frases + cierre, 2,4 s cada uno) y OUT_DIR/portada.jpg
+
+En los títulos, <g>texto</g> va en dorado.
 """
-import base64, json, math, os, re, subprocess, sys, html
+import base64, json, os, subprocess, sys, tempfile
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-FONTS = ROOT / "assets" / "fonts"
-BG = "#141814"
-GOLD = "#F2C14E"
-RING = "#2A2E2A"
+ROOT = Path(__file__).resolve().parent
+BG, GOLD, WHITE, SOFT = "#141814", "#F2C14E", "#FFFFFF", "#D7DACF"
 
 
-def b64(path):
-    return base64.b64encode(Path(path).read_bytes()).decode()
+def _font_css():
+    css = []
+    for w in (400, 500, 700, 800):
+        for sub in ("latin", "latin-ext"):
+            f = ROOT / "fonts" / f"outfit-{sub}-{w}-normal.woff2"
+            if f.exists():
+                b = base64.b64encode(f.read_bytes()).decode()
+                css.append(f"@font-face{{font-family:Outfit;font-weight:{w};src:url(data:font/woff2;base64,{b}) format('woff2');}}")
+    return "\n".join(css)
 
 
-def font_css():
-    out = []
-    for w in (300, 400, 500, 600, 700, 800, 900):
-        out.append(
-            f"@font-face{{font-family:Outfit;font-weight:{w};src:url(data:font/woff2;base64,"
-            f"{b64(FONTS / f'outfit-latin-{w}-normal.woff2')}) format('woff2');}}"
-        )
-    return "\n".join(out)
+FONTS = _font_css()
 
 
-def md(text):
-    t = html.escape(text)
-    t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t, flags=re.S)
-    t = re.sub(r"\*(.+?)\*", r"<span class='g'>\1</span>", t, flags=re.S)
-    return t.replace("\n", "<br>")
-
-
-def rings_svg(size, radii, stroke, dot_r, color=RING, angle=135, dot_color=None):
-    """Circles all internally tangent at one point (the brand mark)."""
-    a = math.radians(angle)
-    ux, uy = math.cos(a), math.sin(a)
-    R = radii[0]
-    cx0, cy0 = size / 2, size / 2
+def logo_svg(size=150, stroke="#fff", dot=GOLD, sw=3.2):
+    # Espiral de círculos que se van desplazando hacia abajo a la izquierda.
+    rs = [75, 58, 42, 27, 14]
+    end = (-25, 24)
     parts = []
-    for r in radii:
-        d = (R - r) * 0.72
-        cx, cy = cx0 + d * ux, cy0 + d * uy
-        parts.append(f"<circle cx='{cx:.1f}' cy='{cy:.1f}' r='{r:.1f}' fill='none' stroke='{color}' stroke-width='{stroke}'/>")
-    r = radii[-1]
-    d = (R - r) * 0.72 + r * 0.45
-    parts.append(f"<circle cx='{cx0 + d*ux:.1f}' cy='{cy0 + d*uy:.1f}' r='{dot_r}' fill='{dot_color or color}'/>")
-    return f"<svg xmlns='http://www.w3.org/2000/svg' width='{size}' height='{size}' viewBox='0 0 {size} {size}'>{''.join(parts)}</svg>"
+    for i, r in enumerate(rs):
+        t = i / (len(rs) - 1)
+        cx, cy = end[0] * t, end[1] * t
+        parts.append(f"<circle cx='{cx:.1f}' cy='{cy:.1f}' r='{r}' fill='none' stroke='{stroke}' stroke-width='{sw}'/>")
+    parts.append(f"<circle cx='{end[0]}' cy='{end[1]}' r='5' fill='{dot}'/>")
+    return f"<svg width='{size}' height='{size}' viewBox='-80 -80 160 160'>{''.join(parts)}</svg>"
 
 
-def logo_svg(size=40, stroke=None):
-    s = size
-    stroke = stroke or max(1.2, s / 34)
-    R = s / 2 - stroke
-    radii = [R * f for f in (1, 0.8, 0.61, 0.43, 0.27)]
-    return rings_svg(s, radii, stroke, dot_r=R * 0.1, color="#fff", angle=135, dot_color=GOLD)
+def rings_svg(w, h, cx, cy, op=0.07):
+    rs = [170, 340, 510, 680, 850]
+    out = []
+    for i, r in enumerate(rs):
+        dx, dy = -i * 22, i * 30
+        out.append(f"<circle cx='{cx+dx}' cy='{cy-dy}' r='{r}' fill='none' stroke='rgba(255,255,255,{op})' stroke-width='6'/>")
+    return f"<svg class='rings' width='{w}' height='{h}' viewBox='0 0 {w} {h}'>{''.join(out)}</svg>"
 
 
-def deco(size):
-    R = size / 2 - 4
-    return rings_svg(size, [R * f for f in (1, 0.8, 0.6, 0.4, 0.22)], 5, dot_r=R * 0.07)
+def gold(s):
+    return (s or "").replace("<g>", "<span class='g'>").replace("</g>", "</span>")
+
+
+def img_uri(path):
+    p = Path(path)
+    mime = "image/png" if p.suffix.lower() == ".png" else "image/jpeg"
+    return f"data:{mime};base64,{base64.b64encode(p.read_bytes()).decode()}"
 
 
 BASE_CSS = f"""
+{FONTS}
 *{{margin:0;padding:0;box-sizing:border-box}}
-body{{background:{BG};font-family:Outfit,sans-serif;color:#fff;overflow:hidden}}
+body{{background:{BG};font-family:Outfit,sans-serif;color:{WHITE}}}
+.page{{position:relative;overflow:hidden;background:{BG}}}
 .g{{color:{GOLD}}}
-b{{font-weight:700;color:#fff}}
-.brand{{display:flex;align-items:center;gap:14px;font-weight:600;letter-spacing:.24em;font-size:22px}}
-.kicker{{color:{GOLD};font-weight:700;letter-spacing:.2em;font-size:22px;text-transform:uppercase}}
-.title{{font-weight:800;text-transform:uppercase;line-height:.98;letter-spacing:-.02em}}
-.rule{{width:64px;height:6px;background:{GOLD};border-radius:3px}}
-.body{{font-weight:300;font-size:34px;line-height:1.42;color:#e9ebe7}}
+.rings{{position:absolute;left:0;top:0}}
+.brand{{position:absolute;top:58px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:18px;
+  font-weight:700;letter-spacing:.32em;font-size:24px}}
+.photo{{position:absolute;left:0;top:0;width:100%;object-fit:cover}}
+.fade{{position:absolute;left:0;width:100%}}
+.kicker{{color:{GOLD};font-weight:700;letter-spacing:.2em;font-size:30px;text-transform:uppercase;margin-bottom:26px}}
+.title{{font-weight:800;line-height:.98;letter-spacing:-.01em;text-transform:uppercase}}
+.sub{{color:{SOFT};font-weight:400;font-size:34px;line-height:1.3;margin-top:28px}}
+.block{{position:absolute;left:80px;right:80px;text-align:center}}
+.pill{{display:inline-block;background:{GOLD};color:{BG};font-weight:800;letter-spacing:.06em;border-radius:60px}}
+.mid{{position:absolute;left:84px;right:84px;top:150px;bottom:100px;display:flex;flex-direction:column;justify-content:center}}
+.num{{position:absolute;top:58px;right:70px;color:rgba(255,255,255,.45);font-weight:500;font-size:26px}}
 """
 
 
-def page(inner, w, h, extra_css=""):
-    return (f"<!doctype html><html><head><meta charset='utf-8'><style>{font_css()}{BASE_CSS}"
-            f"body{{width:{w}px;height:{h}px;position:relative}}{extra_css}</style></head><body>{inner}</body></html>")
+def brand(sz=46):
+    return f"<div class='brand'>{logo_svg(sz, sw=5)}<span>HEALTHSPAN CLUB</span></div>"
 
 
-def photo_uri(path):
-    p = Path(path)
-    if not p.is_absolute():
-        p = ROOT / p
-    mime = "image/png" if p.suffix.lower() == ".png" else "image/jpeg"
-    return f"data:{mime};base64,{b64(p)}"
+def end_card_html(w, h, title, sub, pill):
+    cy = h // 2 - 60
+    return f"""<div class='page' style='width:{w}px;height:{h}px'>{rings_svg(w, h, w//2 - 40, cy + 220)}
+<div class='block' style='top:{cy-310}px'>{logo_svg(170)}
+<div class='title' style='font-size:112px;margin-top:40px'>{gold(title)}</div>
+<div class='sub' style='color:#fff;font-size:40px'>{sub}</div>
+<div class='pill' style='margin-top:46px;font-size:34px;padding:22px 46px'>{pill}</div></div></div>"""
 
 
-# ---------------------------------------------------------------- carousel
-def header(page_no=None, total=None, center=False):
-    num = f"<div style='color:#8b8f8a;font-weight:500;letter-spacing:.12em;font-size:21px'>{page_no:02d} / {total:02d}</div>" if page_no else ""
-    just = "center" if center else "space-between"
-    return (f"<div style='position:absolute;top:56px;left:64px;right:64px;display:flex;justify-content:{just};align-items:center;z-index:5'>"
-            f"<div class='brand'>{logo_svg(40)}HEALTHSPAN CLUB</div>{num}</div>")
+def reel_beat_html(image, b):
+    return f"""<div class='page' style='width:1080px;height:1920px'>
+<img class='photo' src='{img_uri(image)}' style='height:1180px'>
+<div class='fade' style='top:640px;height:560px;background:linear-gradient(to bottom,rgba(20,24,20,0),{BG} 92%)'></div>
+{brand()}
+<div class='block' style='top:1100px'>
+{f"<div class='kicker'>{b['kicker']}</div>" if b.get('kicker') else ''}
+<div class='title' style='font-size:{b.get('size', 100)}px'>{gold(b['title'])}</div>
+{f"<div class='sub'>{b['sub']}</div>" if b.get('sub') else ''}
+</div></div>"""
 
 
-def footer(source=None):
-    src = f"<div>Fuente: {html.escape(source)}</div>" if source else "<div></div>"
-    return (f"<div style='position:absolute;bottom:52px;left:64px;right:64px;display:flex;justify-content:space-between;"
-            f"font-size:19px;color:#8b8f8a;z-index:5'>{src}<div style='color:#fff;font-weight:600'>@healthspanclub.es</div></div>")
+def carousel_slide_html(s, image, i, n):
+    w, h = 1080, 1350
+    k = s["kind"]
+    num = f"<div class='num'>{i}/{n}</div>"
+    if k == "cover":
+        photo = f"<img class='photo' src='{img_uri(image)}' style='height:880px'><div class='fade' style='top:420px;height:480px;background:linear-gradient(to bottom,rgba(20,24,20,0),{BG} 92%)'></div>" if image else rings_svg(w, h, 760, 420)
+        top = 800 if image else 420
+        return f"""<div class='page' style='width:{w}px;height:{h}px'>{photo}{brand()}
+<div class='block' style='top:{top}px'>{f"<div class='kicker'>{s['kicker']}</div>" if s.get('kicker') else ''}
+<div class='title' style='font-size:{s.get('size', 96)}px'>{gold(s['title'])}</div>
+{f"<div class='sub'>{s['sub']}</div>" if s.get('sub') else ''}
+<div class='sub' style='font-size:26px;margin-top:40px;color:rgba(255,255,255,.5)'>DESLIZA →</div></div></div>"""
+    if k == "news":
+        return f"""<div class='page' style='width:{w}px;height:{h}px'>{rings_svg(w, h, 780, 380, 0.08)}{brand()}
+<div class='mid'>
+<div><div class='pill' style='font-size:28px;padding:14px 30px;margin-bottom:46px'>{s['label']}</div>
+<div class='title' style='font-size:{s.get('size', 92)}px'>{gold(s['title'])}</div>
+{f"<div class='sub' style='font-size:36px'>{s['sub']}</div>" if s.get('sub') else ''}
+<div class='sub' style='font-size:26px;margin-top:46px;color:rgba(255,255,255,.5)'>DESLIZA →</div></div></div></div>"""
+    if k == "text":
+        big = f"<div class='title g' style='font-size:{s.get('bigsize', 250)}px;margin-bottom:18px'>{s['big']}</div>" if s.get("big") else ""
+        return f"""<div class='page' style='width:{w}px;height:{h}px'>{rings_svg(w, h, 980, 1280, 0.05)}{brand()}{num}
+<div class='mid'><div>
+{f"<div class='kicker'>{s['kicker']}</div>" if s.get('kicker') else ''}{big}
+<div class='title' style='font-size:{s.get('size', 78)}px;line-height:1.02'>{gold(s.get('title',''))}</div>
+{f"<div class='sub' style='font-size:44px;line-height:1.36'>{s['body']}</div>" if s.get('body') else ''}
+{f"<div class='sub' style='font-size:26px;margin-top:44px;color:rgba(255,255,255,.45)'>{s['source']}</div>" if s.get('source') else ''}
+</div></div></div>"""
+    if k == "cta":
+        return end_card_html(w, h, s.get("title", "SÍGUENOS PARA <g>VIVIR MÁS</g>"),
+                             s.get("sub", "Ciencia de la longevidad, sin humo."),
+                             s.get("pill", "SÍGUENOS · @healthspanclub.es"))
+    raise ValueError(k)
 
 
-def deco_corner():
-    return f"<div style='position:absolute;right:-180px;bottom:-200px;opacity:1'>{deco(620)}</div>"
-
-
-def slide_cover_photo(s, photo):
-    return page(
-        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:250px;width:1080px;height:1100px;object-fit:cover;object-position:{s.get('pos', '50% 20%')}'>"
-        f"<div style='position:absolute;inset:0;background:linear-gradient(180deg,{BG} 0%,{BG} 22%,rgba(20,24,20,.55) 36%,rgba(20,24,20,0) 52%,rgba(20,24,20,0) 82%,rgba(20,24,20,.75) 100%)'></div>"
-        + header(center=True)
-        + f"<div style='position:absolute;top:150px;left:60px;right:60px;text-align:center;z-index:5'>"
-        f"<div class='kicker'>{md(s['kicker'])}</div>"
-        f"<div class='title' style='font-size:{s.get('size', 96)}px;margin-top:22px'>{md(s['title'])}</div></div>"
-        + f"<div style='position:absolute;bottom:64px;left:0;right:0;display:flex;justify-content:center;z-index:5'>"
-        f"<div style='background:{GOLD};color:#141814;font-weight:700;letter-spacing:.12em;font-size:24px;padding:16px 30px;border-radius:40px'>DESLIZA &rarr;</div></div>",
-        1080, 1350)
-
-
-def slide_cover_type(s):
-    big = f"<div class='title g' style='font-size:{s.get('big_size', 300)}px;line-height:.85'>{md(s['big'])}</div>" if s.get("big") else ""
-    return page(
-        f"<div style='position:absolute;right:-260px;top:-140px'>{deco(900)}</div>" + header(center=True)
-        + f"<div style='position:absolute;left:64px;right:64px;top:380px;z-index:5'>"
-        f"<div class='kicker'>{md(s['kicker'])}</div><div style='margin-top:36px'>{big}</div>"
-        f"<div class='title' style='font-size:{s.get('size', 84)}px;margin-top:36px'>{md(s['title'])}</div></div>"
-        + f"<div style='position:absolute;bottom:64px;left:0;right:0;display:flex;justify-content:center;z-index:5'>"
-        f"<div style='background:{GOLD};color:#141814;font-weight:700;letter-spacing:.12em;font-size:24px;padding:16px 30px;border-radius:40px'>DESLIZA &rarr;</div></div>",
-        1080, 1350)
-
-
-def slide_content(s, n, total):
-    return page(
-        deco_corner() + header(n, total)
-        + f"<div style='position:absolute;left:64px;right:64px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;z-index:5'>"
-        f"<div class='kicker'>{md(s['kicker'])}</div>"
-        f"<div class='title' style='font-size:{s.get('size', 96)}px;margin-top:26px'>{md(s['title'])}</div>"
-        f"<div class='rule' style='margin:38px 0 34px'></div>"
-        f"<div class='body'>{md(s['body'])}</div></div>"
-        + footer(s.get("source")),
-        1080, 1350)
-
-
-ICONS = {
-    "save": "<path d='M7 4h10v16l-5-4-5 4z' fill='none' stroke='#F2C14E' stroke-width='1.8' stroke-linejoin='round'/>",
-    "share": "<path d='M21 3 10 14M21 3l-7 18-4-7-7-4z' fill='none' stroke='#F2C14E' stroke-width='1.8' stroke-linejoin='round'/>",
-    "follow": "<circle cx='9' cy='8' r='4' fill='none' stroke='#F2C14E' stroke-width='1.8'/><path d='M2 20c1-4 4-6 7-6s6 2 7 6M19 7v6M16 10h6' fill='none' stroke='#F2C14E' stroke-width='1.8'/>",
-}
-
-
-def slide_end(note):
-    btn = lambda ic, label: (f"<div style='flex:1;border:2px solid #3a3f3a;border-radius:22px;padding:30px 0;text-align:center'>"
-                             f"<svg width='40' height='40' viewBox='0 0 24 24'>{ICONS[ic]}</svg>"
-                             f"<div style='font-weight:600;font-size:26px;margin-top:10px'>{label}</div></div>")
-    return page(
-        f"<div style='position:absolute;left:-60px;top:20px'>{deco(1200)}</div>"
-        + f"<div style='position:absolute;top:200px;left:0;right:0;text-align:center;z-index:5'>{logo_svg(120)}"
-        f"<div class='title' style='font-size:120px;margin-top:50px'>VIVE MÁS.<br><span class='g'>VIVE MEJOR.</span></div>"
-        f"<div style='font-size:34px;font-weight:300;margin-top:34px'>Ciencia de la longevidad, sin humo.</div></div>"
-        + f"<div style='position:absolute;left:64px;right:64px;bottom:200px;display:flex;gap:24px;z-index:5'>"
-        f"{btn('save', 'Guárdalo')}{btn('share', 'Compártelo')}{btn('follow', 'Síguenos')}</div>"
-        + f"<div style='position:absolute;left:0;right:0;bottom:70px;text-align:center;z-index:5'>"
-        f"<div style='font-weight:700;font-size:26px'>@healthspanclub.es</div>"
-        f"<div style='color:{GOLD};font-size:24px;margin-top:12px'>{html.escape(note)}</div></div>",
-        1080, 1350)
-
-
-def build_carousel(spec, out):
-    slides = spec["slides"]
-    total = len(slides) + 2
-    pages = [slide_cover_photo(spec["cover"], spec["photo"]) if spec.get("photo") else slide_cover_type(spec["cover"])]
-    for i, s in enumerate(slides):
-        pages.append(slide_content(s, i + 2, total))
-    pages.append(slide_end(spec.get("end_note", "Medimos todo esto en The Longevity Weekend · enlace en la bio")))
-    return shoot(pages, out, 1080, 1350, prefix="slide")
-
-
-# ---------------------------------------------------------------- reel
-def reel_frame(photo, inner, zoom=1.0, pos='50% 12%', top=0):
-    POS = pos
-    return page(
-        f"<img src='{photo_uri(photo)}' style='position:absolute;left:0;top:{top}px;width:1080px;height:1240px;object-fit:cover;object-position:{POS};transform:scale({zoom});transform-origin:50% 40%;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 {min(top,1)*220}px)'>"
-        f"<div style='position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,20,.55) 0%,rgba(20,24,20,0) 14%,rgba(20,24,20,0) 42%,rgba(20,24,20,.85) 58%,{BG} 66%)'></div>"
-        + f"<div style='position:absolute;top:150px;left:0;right:0;display:flex;justify-content:center;z-index:5'><div class='brand' style='font-size:24px'>{logo_svg(44)}HEALTHSPAN CLUB</div></div>"
-        + f"<div style='position:absolute;left:90px;right:90px;top:1050px;text-align:center;z-index:5'>{inner}</div>",
-        1080, 1920)
-
-
-def reel_pages(spec):
-    p = spec["photo"]
-    f = spec["frames"]
-    pos = spec.get("pos", "50% 0%")
-    _rf = reel_frame
-    top = spec.get("top", 150)
-    reel_frame_ = lambda ph, inner, zoom=1.0: _rf(ph, inner, zoom, pos, top)
-    stamp = f[1]
-    pages = [
-        reel_frame_(p, f"<div class='kicker' style='font-size:30px'>{md(f[0].get('kicker', '¿Mito o ciencia?'))}</div>"
-                      f"<div class='title' style='font-size:{f[0].get('size', 104)}px;margin-top:30px'>{md(f[0]['title'])}</div>"),
-        reel_frame_(p, f"<div style='display:inline-block;transform:rotate(-6deg);border:10px solid {GOLD};border-radius:20px;padding:10px 46px;"
-                      f"color:{GOLD};font-weight:800;font-size:{stamp.get('size', 150)}px;letter-spacing:.02em'>{md(stamp['stamp'])}</div>"
-                      f"<div class='body' style='margin-top:56px;font-size:38px'>{md(stamp['body'])}</div>", 1.02),
-        reel_frame_(p, f"<div class='title' style='font-size:{f[2].get('size', 84)}px'>{md(f[2]['title'])}</div>"
-                      f"<div class='body' style='margin-top:30px;font-size:36px'>{md(f[2]['body'])}</div>", 1.04),
-        reel_frame_(p, f"<div class='title' style='font-size:{f[3].get('size', 84)}px'>{md(f[3]['title'])}</div>"
-                      f"<div class='body' style='margin-top:30px;font-size:36px'>{md(f[3]['body'])}</div>", 1.06),
-        page(f"<div style='position:absolute;left:-210px;top:40px'>{deco(1500)}</div>"
-             f"<div style='position:absolute;top:640px;left:0;right:0;text-align:center;z-index:5'>{logo_svg(160)}"
-             f"<div class='title' style='font-size:116px;margin-top:40px'>SÍGUENOS PARA<br><span class='g'>VIVIR MÁS</span></div>"
-             f"<div style='font-size:42px;font-weight:300;margin-top:40px'>Ciencia de la longevidad, sin humo.</div>"
-             f"<div style='display:inline-block;margin-top:50px;background:{GOLD};color:#141814;border-radius:50px;padding:22px 44px;font-weight:800;font-size:34px;letter-spacing:.04em'>SÍGUENOS · @healthspanclub.es</div></div>",
-             1080, 1920),
-    ]
-    return pages
-
-
-def build_reel(spec, out):
-    out.mkdir(parents=True, exist_ok=True)
-    frames = shoot(reel_pages(spec), out / "frames", 1080, 1920, prefix="f", ext="png")
-    (out / "portada.jpg").write_bytes(Path(shoot([reel_pages(spec)[0]], out / "frames", 1080, 1920, prefix="cover", ext="jpg")[0]).read_bytes())
-    seg, fade = 2.6, 0.25
-    inputs, filters = [], []
-    for i, fr in enumerate(frames):
-        inputs += ["-loop", "1", "-t", str(seg), "-i", str(fr)]
-        z = "1+0.012*t/2.6" if i < 4 else "1"
-        filters.append(f"[{i}:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p[v{i}]")
-    chain, last = [], "v0"
-    for i in range(1, len(frames)):
-        off = round(i * (seg - fade), 3)
-        chain.append(f"[{last}][v{i}]xfade=transition=fade:duration={fade}:offset={off}[x{i}]")
-        last = f"x{i}"
-    fc = ";".join(filters + chain)
-    cmd = ["ffmpeg", "-loglevel", "error", "-y", *inputs, "-filter_complex", fc, "-map", f"[{last}]",
-           "-t", "12", "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-           str(out / "reel.mp4")]
-    subprocess.run(cmd, check=True)
-    return [out / "reel.mp4", out / "portada.jpg"]
-
-
-# ---------------------------------------------------------------- shoot
-def shoot(pages, out, w, h, prefix="slide", ext="jpg"):
+def shoot(htmls, sizes, outs):
     from playwright.sync_api import sync_playwright
-    out = Path(out)
-    out.mkdir(parents=True, exist_ok=True)
-    files = []
     with sync_playwright() as p:
-        b = p.chromium.launch()
-        pg = b.new_page(viewport={"width": w, "height": h})
-        for i, htm in enumerate(pages, 1):
-            pg.set_content(htm, wait_until="load")
+        br = p.chromium.launch()
+        pg = br.new_page()
+        for html, (w, h), out in zip(htmls, sizes, outs):
+            pg.set_viewport_size({"width": w, "height": h})
+            pg.set_content(f"<html><head><meta charset='utf-8'><style>{BASE_CSS}</style></head><body>{html}</body></html>")
             pg.evaluate("document.fonts.ready")
-            f = out / f"{prefix}{i:02d}.{ext}"
-            if ext == "jpg":
-                pg.screenshot(path=str(f), type="jpeg", quality=92)
-            else:
-                pg.screenshot(path=str(f), type="png")
-            files.append(f)
-        b.close()
-    return files
+            pg.wait_for_timeout(150)
+            pg.screenshot(path=str(out), type="png")
+        br.close()
+
+
+def render_carousel(spec, out):
+    out.mkdir(parents=True, exist_ok=True)
+    n = len(spec["slides"])
+    htmls = [carousel_slide_html(s, spec.get("image"), i + 1, n) for i, s in enumerate(spec["slides"])]
+    pngs = [out / f"slide_{i+1:02d}.png" for i in range(n)]
+    shoot(htmls, [(1080, 1350)] * n, pngs)
+    for p in pngs:  # JPG para Instagram
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(p), "-q:v", "2", str(p.with_suffix(".jpg"))], check=True)
+        p.unlink()
+
+
+def render_reel(spec, out, seg=2.4, xf=0.25):
+    out.mkdir(parents=True, exist_ok=True)
+    tmp = Path(tempfile.mkdtemp())
+    htmls = [reel_beat_html(spec["image"], b) for b in spec["beats"]]
+    htmls.append(end_card_html(1080, 1920, "SÍGUENOS PARA <g>VIVIR MÁS</g>", "Ciencia de la longevidad, sin humo.", "SÍGUENOS · @healthspanclub.es"))
+    pngs = [tmp / f"b{i}.png" for i in range(len(htmls))]
+    shoot(htmls, [(1080, 1920)] * len(htmls), pngs)
+    n = len(pngs)
+    inputs = []
+    for p in pngs:
+        inputs += ["-loop", "1", "-t", f"{seg + xf:.2f}", "-i", str(p)]
+    # Zoom muy lento en cada plano y fundido corto entre planos.
+    f = []
+    for i in range(n):
+        f.append(f"[{i}:v]scale=1188:-1,zoompan=z='min(zoom+0.0006,1.06)':d={int((seg+xf)*30)}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,setsar=1,format=yuv420p[v{i}]")
+    last = "v0"
+    for i in range(1, n):
+        off = i * seg
+        f.append(f"[{last}][v{i}]xfade=transition=fade:duration={xf}:offset={off - xf * 0 :.2f}[x{i}]")
+        last = f"x{i}"
+    total = n * seg
+    cmd = ["ffmpeg", "-loglevel", "error", "-y", *inputs, "-filter_complex", ";".join(f), "-map", f"[{last}]",
+           "-t", f"{total:.2f}", "-r", "30", "-c:v", "libx264", "-preset", "slow", "-crf", "20", "-pix_fmt", "yuv420p",
+           "-movflags", "+faststart", str(out / "reel.mp4")]
+    subprocess.run(cmd, check=True)
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(pngs[0]), "-q:v", "2", str(out / "portada.jpg")], check=True)
 
 
 if __name__ == "__main__":
-    spec_path = Path(sys.argv[1])
-    spec = json.loads(spec_path.read_text())
-    out = ROOT / "out" / spec["id"]
-    if spec["type"] == "reel":
-        print(build_reel(spec, out))
-    else:
-        print(build_carousel(spec, out))
+    spec = json.loads(Path(sys.argv[1]).read_text())
+    out = Path(sys.argv[2])
+    base = Path(sys.argv[1]).resolve().parent
+    if spec.get("image"):
+        spec["image"] = str((base / spec["image"]).resolve())
+    (render_reel if spec["type"] == "reel" else render_carousel)(spec, out)
+    print("ok", out)
