@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Sueño",
+   "title": "¿Sirve <g>recuperar</g> el finde?"
+  },
+  {
+   "title": "Más de 38.000 suecos, <g>13 años</g>",
+   "sub": "Estudio en el Journal of Sleep Research."
+  },
+  {
+   "title": "≤5 h todos los días: <g>+65%</g>",
+   "sub": "de mortalidad, en menores de 65 años."
+  },
+  {
+   "title": "Recuperar el finde <g>compensó</g>",
+   "sub": "Pero lo ideal es dormir bien toda la semana."
+  }
+ ],
+ "publish": "2026-11-15T18:00:00"
+}

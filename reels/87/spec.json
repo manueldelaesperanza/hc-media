@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "El dato",
+   "title": "<g>2 refrescos</g> al día"
+  },
+  {
+   "title": "118.363 adultos, <g>décadas</g> de seguimiento",
+   "sub": "Estudio de Harvard en Circulation."
+  },
+  {
+   "title": "<g>+21%</g> de mortalidad",
+   "sub": "Y un 31% más de muerte cardiovascular."
+  },
+  {
+   "title": "Cámbialo por <g>agua con gas</g>",
+   "sub": "Con limón o hielo, sin azúcar."
+  }
+ ],
+ "publish": "2026-11-12T18:00:00"
+}

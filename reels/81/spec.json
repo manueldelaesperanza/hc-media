@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Tensión alta",
+   "title": "El ejercicio que <g>más la baja</g>"
+  },
+  {
+   "title": "<g>Sentadilla</g> en pared",
+   "sub": "Isométrico: aguantar la postura sin moverte."
+  },
+  {
+   "title": "<g>−8 puntos</g> de tensión",
+   "sub": "270 ensayos, 15.827 personas. El cardio: −4,5."
+  },
+  {
+   "title": "Súmalo a <g>tu rutina</g>",
+   "sub": "Sin dejar el cardio ni la medicación."
+  }
+ ],
+ "publish": "2026-11-09T18:00:00"
+}

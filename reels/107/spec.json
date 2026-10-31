@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "Crujirse los nudillos <g>da artrosis</g>"
+  },
+  {
+   "title": "215 personas de <g>50 a 89 años</g>",
+   "sub": "Con y sin artrosis en las manos."
+  },
+  {
+   "title": "Artrosis: <g>18%</g> frente a <g>22%</g>",
+   "sub": "En quienes los crujían y quienes no. Sin diferencia."
+  },
+  {
+   "title": "Cruje <g>tranquilo</g>",
+   "sub": "Si duele o se hincha, consulta."
+  }
+ ],
+ "publish": "2026-11-22T18:00:00"
+}

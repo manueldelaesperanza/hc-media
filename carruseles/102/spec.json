@@ -1,0 +1,38 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Prevención",
+   "title": "Moverte se asocia con menos riesgo de <g>13 cánceres</g>",
+   "size": 88,
+   "sub": "1,44 millones de personas."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "1,44",
+   "title": "millones de personas",
+   "body": "Datos de EE. UU. y Europa reunidos por el Instituto Nacional del Cáncer de EE. UU., con una mediana de 11 años de seguimiento.",
+   "source": "Moore et al., JAMA Intern Med, 2016"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "13",
+   "title": "tipos de cáncer con menos riesgo",
+   "body": "Entre ellos, esófago, hígado, riñón, colon, mama y endometrio. En 7, el riesgo era al menos un 20% menor."
+  },
+  {
+   "kind": "text",
+   "kicker": "Con perspectiva",
+   "title": "Con <g>cualquier peso</g>",
+   "body": "La relación se mantuvo en personas con normopeso y con sobrepeso. Es observacional, pero suma razones para moverte."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-20T10:00:00"
+}

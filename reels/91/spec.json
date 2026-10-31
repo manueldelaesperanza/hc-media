@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "El azúcar moreno <g>es más sano</g>"
+  },
+  {
+   "title": "Mismas <g>calorías</g>",
+   "sub": "190 frente a 194 kcal por cada 50 g."
+  },
+  {
+   "title": "Minerales: <g>casi nada</g>",
+   "sub": "Una cucharada no llega al 1% de lo que necesitas."
+  },
+  {
+   "title": "Azúcar es <g>azúcar</g>",
+   "sub": "Lo que importa es cuánto tomas."
+  }
+ ],
+ "publish": "2026-11-14T18:00:00"
+}

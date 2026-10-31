@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "El dato",
+   "title": "Dos <g>tazas de té</g> al día"
+  },
+  {
+   "title": "498.043 personas, <g>11 años</g>",
+   "sub": "UK Biobank, de 40 a 69 años."
+  },
+  {
+   "title": "<g>−9 a −13%</g> de mortalidad",
+   "sub": "Con leche o azúcar, más o menos caliente."
+  },
+  {
+   "title": "Té sí, <g>azúcar poco</g>",
+   "sub": "Es una asociación, no un elixir."
+  }
+ ],
+ "publish": "2026-11-21T10:00:00"
+}

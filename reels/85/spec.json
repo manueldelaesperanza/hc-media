@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Sin gimnasio",
+   "title": "<g>1 minuto</g> intenso, 3 veces al día"
+  },
+  {
+   "title": "25.241 personas <g>sin deporte</g>",
+   "sub": "Con sensor en la muñeca, casi 7 años."
+  },
+  {
+   "title": "<g>−38%</g> de mortalidad",
+   "sub": "Y casi la mitad de muerte cardiovascular."
+  },
+  {
+   "title": "Escaleras, cuestas, <g>la compra</g>",
+   "sub": "Cuando puedas, aprieta un minuto."
+  }
+ ],
+ "publish": "2026-11-11T18:00:00"
+}

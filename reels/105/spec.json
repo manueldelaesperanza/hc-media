@@ -1,0 +1,22 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Truco",
+   "title": "¿Caminas a <g>100 pasos por minuto</g>?"
+  },
+  {
+   "title": "Ese es el ritmo <g>moderado</g>",
+   "sub": "El que cuenta para los 150 minutos semanales."
+  },
+  {
+   "title": "<g>130</g> pasos por minuto: <g>vigoroso</g>"
+  },
+  {
+   "title": "Cuenta <g>15 segundos</g>",
+   "sub": "25 pasos o más: vas a buen ritmo."
+  }
+ ],
+ "publish": "2026-11-21T18:00:00"
+}

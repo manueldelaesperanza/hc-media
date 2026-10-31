@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "La sal marina <g>es más sana</g>"
+  },
+  {
+   "title": "<g>40%</g> de sodio",
+   "sub": "La de mesa y casi todas las marinas."
+  },
+  {
+   "title": "<g>6 de cada 10</g> creen lo contrario",
+   "sub": "Encuesta de la American Heart Association."
+  },
+  {
+   "title": "Reduce <g>la cantidad</g>",
+   "sub": "Hierbas, limón y especias para dar sabor."
+  }
+ ],
+ "publish": "2026-11-17T10:00:00"
+}

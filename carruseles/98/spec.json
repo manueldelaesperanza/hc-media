@@ -1,0 +1,36 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Cerebro",
+   "title": "La vacuna del zóster y <g>la demencia</g>",
+   "sub": "Un experimento natural en Gales."
+  },
+  {
+   "kind": "text",
+   "kicker": "El experimento",
+   "title": "Una fecha <g>lo decidió</g>",
+   "body": "En 2013, Gales vacunó del herpes zóster solo a quienes habían nacido a partir del 2 de septiembre de 1933. Así se pudo comparar a personas casi iguales, separadas por semanas de edad.",
+   "source": "Eyting et al., Nature, 2025"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "−20%",
+   "title": "de nuevos diagnósticos de demencia",
+   "body": "en los 7 años siguientes, en quienes pudieron vacunarse."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Pregunta en <g>tu centro de salud</g>",
+   "body": "En España se ofrece por edad y a grupos de riesgo. Falta confirmar el efecto en ensayos, pero la vacuna ya merece la pena por sí misma."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-18T10:00:00"
+}

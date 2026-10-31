@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Biohacking",
+   "title": "¿Sirven las <g>duchas frías</g>?"
+  },
+  {
+   "title": "3.018 personas, <g>30 días</g>",
+   "sub": "Terminaban la ducha con 30–90 s de agua fría."
+  },
+  {
+   "title": "<g>−29%</g> de bajas laborales",
+   "sub": "Pero no enfermaron menos días."
+  },
+  {
+   "title": "Pruébalo si <g>te sienta bien</g>",
+   "sub": "Si tienes problemas de corazón, consulta antes."
+  }
+ ],
+ "publish": "2026-11-15T10:00:00"
+}

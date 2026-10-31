@@ -1,0 +1,37 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Hábitos",
+   "title": "Un hábito tarda <g>66 días</g>, no 21",
+   "sub": "Y saltarte un día no lo arruina."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "96",
+   "title": "voluntarios, 84 días",
+   "body": "Investigadores del University College London pidieron a cada uno repetir un hábito nuevo a diario y medir cuánto les salía en automático.",
+   "source": "Lally et al., Eur J Soc Psychol, 2010"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "66",
+   "title": "días de mediana",
+   "body": "Con mucha variación: de 18 a 254 días según la persona y el hábito."
+  },
+  {
+   "kind": "text",
+   "kicker": "La buena noticia",
+   "title": "Saltarte un día <g>no lo rompe</g>",
+   "body": "Fallar una vez no cambió el resultado. Empieza pequeño, átalo a algo que ya haces y no te castigues."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-22T10:00:00"
+}

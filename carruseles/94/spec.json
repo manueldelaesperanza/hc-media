@@ -1,0 +1,36 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Sueño",
+   "title": "Si roncas, <g>mira esto</g>",
+   "sub": "Casi 1.000 millones de adultos tienen apnea del sueño."
+  },
+  {
+   "kind": "text",
+   "kicker": "El dato",
+   "big": "936",
+   "title": "millones de adultos",
+   "body": "Es la estimación mundial de personas de 30 a 69 años con apnea obstructiva del sueño. Muchos no lo saben.",
+   "source": "Benjafield et al., Lancet Respir Med, 2019"
+  },
+  {
+   "kind": "text",
+   "kicker": "Señales",
+   "title": "Ronquidos, <g>pausas</g> y cansancio",
+   "body": "Roncar fuerte, que te digan que dejas de respirar, despertarte cansado o con dolor de cabeza y dormirte de día."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Coméntalo con <g>tu médico</g>",
+   "body": "Hay pruebas de sueño sencillas y tratamientos que funcionan. Dormir bien es uno de los pilares de la longevidad."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-16T10:00:00"
+}

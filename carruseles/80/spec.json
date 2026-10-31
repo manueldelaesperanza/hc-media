@@ -1,0 +1,36 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Movember",
+   "title": "¿Por qué los hombres viven <g>5 años menos</g>?",
+   "sub": "En España, 81,3 años frente a 86,7."
+  },
+  {
+   "kind": "text",
+   "kicker": "El dato",
+   "big": "5,4",
+   "title": "años de diferencia",
+   "body": "En 2023, las mujeres vivieron de media 86,7 años en España y los hombres 81,3. En 1990 la brecha era de 7,3 años.",
+   "source": "Funcas, datos de 2023"
+  },
+  {
+   "kind": "text",
+   "kicker": "Por qué",
+   "title": "Más riesgos, <g>menos chequeos</g>",
+   "body": "Buena parte de la diferencia se explica por hábitos: más tabaco y alcohol, más accidentes y menos visitas al médico."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Este noviembre, <g>revísate</g>",
+   "body": "Mídete la tensión, hazte una analítica y pregunta a tu médico qué revisiones te tocan por edad. Y si algo te preocupa, habla de ello."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-09T10:00:00"
+}

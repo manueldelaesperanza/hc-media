@@ -1,0 +1,38 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Día Internacional del Hombre",
+   "title": "8 hábitos, hasta <g>24 años más</g>",
+   "sub": "719.147 veteranos de EE. UU."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "719.147",
+   "bigsize": 180,
+   "title": "veteranos de 40 a 99 años",
+   "body": "Se analizaron sus hábitos y su supervivencia. Se presentó en el congreso Nutrition 2023 y aún no está publicado en revista.",
+   "source": "Nguyen et al., Nutrition 2023"
+  },
+  {
+   "kind": "text",
+   "kicker": "Los 8 hábitos",
+   "title": "Lo que <g>sumaba años</g>",
+   "body": "Moverse · no fumar · no abusar de opioides · gestionar el estrés · comer bien · no beber en exceso · dormir bien · tener buenas relaciones."
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "+24",
+   "title": "años a los 40, en hombres",
+   "body": "Con los 8 hábitos frente a ninguno. En mujeres, +21. Es una estimación observacional, pero cada hábito suma."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-19T10:00:00"
+}

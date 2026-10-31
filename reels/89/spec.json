@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "El cardio en ayunas <g>quema más grasa</g>"
+  },
+  {
+   "title": "4 semanas, <g>mismo plan</g>",
+   "sub": "20 mujeres: unas en ayunas, otras tras comer."
+  },
+  {
+   "title": "<g>Mismo resultado</g>",
+   "sub": "Ambos grupos perdieron peso y grasa por igual."
+  },
+  {
+   "title": "Entrena <g>cuando te venga bien</g>",
+   "sub": "Lo que cuenta es la constancia."
+  }
+ ],
+ "publish": "2026-11-13T18:00:00"
+}

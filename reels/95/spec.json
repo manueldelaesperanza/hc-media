@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "Correr <g>destroza las rodillas</g>"
+  },
+  {
+   "title": "Más de <g>100.000 personas</g>",
+   "sub": "Metaanálisis sobre correr y artrosis."
+  },
+  {
+   "title": "Artrosis: <g>3,5%</g> en corredores",
+   "sub": "10% en sedentarios y 13% en competición."
+  },
+  {
+   "title": "Corre <g>con cabeza</g>",
+   "sub": "Sube poco a poco y entrena fuerza."
+  }
+ ],
+ "publish": "2026-11-16T18:00:00"
+}

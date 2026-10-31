@@ -1,0 +1,37 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Prevención",
+   "title": "Las caídas se pueden <g>prevenir</g>",
+   "sub": "108 ensayos, 23.407 personas mayores."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "108",
+   "title": "ensayos, 23.407 personas",
+   "body": "Una revisión Cochrane analizó programas de ejercicio en personas mayores que viven en su casa.",
+   "source": "Sherrington et al., Cochrane, 2019"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "−23%",
+   "title": "de caídas con ejercicio",
+   "body": "Equilibrio y ejercicios funcionales: −24%. Combinados con fuerza: −34%. Taichí: −19%."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Entrena el <g>equilibrio</g>",
+   "body": "Ponte a una pierna mientras te lavas los dientes, levántate de la silla sin manos y entrena fuerza de piernas 2 veces por semana."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-13T10:00:00"
+}

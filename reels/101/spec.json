@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "Con la edad, <g>nada de pesas</g>"
+  },
+  {
+   "title": "101 mujeres de <g>unos 65 años</g>",
+   "sub": "Baja masa ósea. 8 meses, 2 sesiones de 30 min."
+  },
+  {
+   "title": "Columna: <g>+2,9%</g> de hueso",
+   "sub": "El grupo control perdió un 1,2%."
+  },
+  {
+   "title": "Con técnica y <g>supervisión</g>",
+   "sub": "Solo 1 molestia leve en 8 meses."
+  }
+ ],
+ "publish": "2026-11-19T18:00:00"
+}

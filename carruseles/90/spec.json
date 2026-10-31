@@ -1,0 +1,37 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Día Mundial de la Diabetes",
+   "title": "La prediabetes <g>tiene vuelta atrás</g>",
+   "sub": "El ensayo que lo demostró."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "3.234",
+   "title": "personas con prediabetes",
+   "body": "El Diabetes Prevention Program comparó cambios de hábitos, metformina y placebo durante casi 3 años.",
+   "source": "DPP Research Group, NEJM, 2002"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "−58%",
+   "title": "de diabetes con hábitos",
+   "body": "La metformina la redujo un 31%. Los hábitos funcionaron casi el doble."
+  },
+  {
+   "kind": "text",
+   "kicker": "Los objetivos",
+   "title": "<g>7%</g> de peso y <g>150 minutos</g> de ejercicio",
+   "body": "Perder un 7% del peso y moverse al menos 150 minutos a la semana. Si tu glucosa sale alta, empieza por ahí y habla con tu médico."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-14T10:00:00"
+}

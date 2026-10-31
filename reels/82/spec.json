@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "Abdominales para <g>quemar barriga</g>"
+  },
+  {
+   "title": "6 semanas de <g>abdominales</g>",
+   "sub": "24 adultos, 5 días a la semana."
+  },
+  {
+   "title": "La grasa abdominal <g>no bajó</g>",
+   "sub": "Ganaron resistencia, no perdieron barriga."
+  },
+  {
+   "title": "Lo que funciona: <g>todo el cuerpo</g>",
+   "sub": "Comer mejor, moverte más y entrenar fuerza."
+  }
+ ],
+ "publish": "2026-11-10T10:00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Mito",
+   "title": "Sin gluten <g>es más sano</g>"
+  },
+  {
+   "title": "Más de <g>100.000 personas</g>",
+   "sub": "Sin celiaquía, seguidas más de 20 años."
+  },
+  {
+   "title": "El gluten <g>no se asoció</g> con infartos",
+   "sub": "Y quitar integrales podría salir caro."
+  },
+  {
+   "title": "Si eres celíaco, <g>sí</g>",
+   "sub": "Si no, apuesta por el grano integral."
+  }
+ ],
+ "publish": "2026-11-20T18:00:00"
+}

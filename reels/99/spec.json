@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.png",
+ "beats": [
+  {
+   "kicker": "Microbiota",
+   "title": "Fermentados contra <g>la inflamación</g>"
+  },
+  {
+   "title": "36 adultos, <g>10 semanas</g>",
+   "sub": "Yogur, kéfir, kimchi, kombucha…"
+  },
+  {
+   "title": "Bajaron <g>19</g> marcadores de inflamación",
+   "sub": "Y la microbiota se volvió más diversa."
+  },
+  {
+   "title": "Añade <g>fermentados</g> a tu día",
+   "sub": "Naturales y sin azúcar añadido."
+  }
+ ],
+ "publish": "2026-11-18T18:00:00"
+}

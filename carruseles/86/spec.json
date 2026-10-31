@@ -1,0 +1,36 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Salud mental",
+   "title": "El ejercicio también <g>trata la depresión</g>",
+   "sub": "218 ensayos, 14.170 personas."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "218",
+   "title": "ensayos con 14.170 personas",
+   "body": "Un metaanálisis comparó distintos tipos de ejercicio en personas con depresión.",
+   "source": "Noetel et al., BMJ, 2024"
+  },
+  {
+   "kind": "text",
+   "kicker": "Lo que mejor funcionó",
+   "title": "Caminar o correr, <g>yoga</g> y <g>fuerza</g>",
+   "body": "Caminar o correr fue lo más eficaz, seguido del yoga y el entrenamiento de fuerza."
+  },
+  {
+   "kind": "text",
+   "kicker": "Con perspectiva",
+   "title": "Suma, <g>no sustituye</g>",
+   "body": "La calidad de muchos estudios es baja. Si tienes depresión, el ejercicio ayuda junto a tu médico o psicólogo, no en su lugar."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-12T10:00:00"
+}

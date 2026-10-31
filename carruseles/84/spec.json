@@ -1,0 +1,37 @@
+{
+ "type": "carousel",
+ "image": "portada.png",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "El dato",
+   "title": "Tu <g>fuerza de agarre</g> dice cuánto vivirás",
+   "sub": "139.691 personas de 17 países."
+  },
+  {
+   "kind": "text",
+   "kicker": "El estudio",
+   "big": "17",
+   "title": "países, 139.691 personas",
+   "body": "El estudio PURE midió la fuerza de la mano a adultos de 35 a 70 años y los siguió una mediana de 4 años.",
+   "source": "Leong et al., The Lancet, 2015"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "+16%",
+   "title": "de mortalidad por cada 5 kg menos",
+   "body": "La fuerza de agarre predijo la mortalidad mejor que la tensión arterial sistólica."
+  },
+  {
+   "kind": "text",
+   "kicker": "Con perspectiva",
+   "title": "No es la mano: <g>es todo el cuerpo</g>",
+   "body": "El agarre refleja tu fuerza general. Entrena fuerza 2 veces por semana: peso muerto, remo y paseos del granjero con peso."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-11T10:00:00"
+}
