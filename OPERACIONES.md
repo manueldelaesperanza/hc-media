@@ -18,3 +18,7 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
   «SÍGUENOS PARA VIVIR MÁS», 2,4 s cada parte, 12 s. Carrusel 1080x1350: portada, diapositivas de texto y cierre.
 - Estructura: carruseles/NN/{spec.json,caption.txt,slide_XX.jpg}, reels/NN/{spec.json,caption.txt,imagen.png,reel.mp4,portada.jpg}.
 - Desde 31-oct: más reels (los reels llegan a ~3 veces más gente). El reparto de formatos se revisa cada viernes con las métricas.
+- 02-nov-2026: quincena 9–22 nov (80–107) completa y programada en Metricool: 10 carruseles (autoPublish) + 16 reels
+  (autoPublish false) + Healthspan Hoy 83. Vídeos desde raw.githubusercontent también funcionan en Metricool.
+  Recordatorios de reels: send_later 15 min antes de cada uno. Pendiente: Healthspan Hoy 97 (mar 17), se elige el vie 13.
+- Imágenes: tools/img_assemble.py reconstruye las imágenes de ChatGPT (canvas → JPEG base64 en trozos de 250k).
