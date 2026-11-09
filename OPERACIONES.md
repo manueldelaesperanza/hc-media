@@ -22,3 +22,8 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
   (autoPublish false) + Healthspan Hoy 83. Vídeos desde raw.githubusercontent también funcionan en Metricool.
   Recordatorios de reels: send_later 15 min antes de cada uno. Pendiente: Healthspan Hoy 97 (mar 17), se elige el vie 13.
 - Imágenes: tools/img_assemble.py reconstruye las imágenes de ChatGPT (canvas → JPEG base64 en trozos de 250k).
+- 09-nov-2026: DUPLICADOS. En Metricool había una segunda tanda de la quincena 9–22 nov creada el 30-oct (ids 4110xxxxx),
+  además de la buena (2-nov, ids 41430xxxx/41431xxxx + HH 412275778, la que coincide con este repo y las cifras verificadas).
+  El 9-nov a las 10:00 se publicaron los DOS carruseles de Movember. Las 25 piezas pendientes de la tanda del 30-oct
+  se pasaron a BORRADOR (draft) en Metricool, no se borraron. Antes de programar, comprobar siempre con getScheduledPosts
+  que no hay piezas ya programadas en esas fechas.
