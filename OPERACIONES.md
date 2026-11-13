@@ -31,3 +31,8 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
   sin respuesta de Manuel. Quincena 23 nov–6 dic planificada: piezas 108–135 (21 reels, 5 carruseles, HH 111 y 125).
   Doc: https://claude.ai/artifact/DRsV8o27TxiEbHWeMMsjop · planes/quincena-2026-11-23.md, prompts-2026-11-23.md, tlw-manuel-2026-11-23.md.
   Pendiente: OK de Manuel + Mac conectado para generar las 26 imágenes; programar antes del dom 22 (revisar duplicados antes).
+- 13-nov-2026 (tras corte de conversación): quincena 23 nov–6 dic (108–135) COMPLETA y programada en Metricool:
+  5 carruseles (autoPublish) + 21 reels (autoPublish false). Ids 4267677xx–426792481. HH 111 (mar 24) y 125 (mar 1) pendientes
+  de la noticia de los viernes 20 y 27. Recordatorios de reels con send_later (16:45Z / 08:45Z).
+  img_assemble.py: ahora el trozo más reciente gana y descarta trozos viejos (antes mezclaba imágenes de la misma clave).
+  ChatGPT con el panel oculto: los temporizadores en segundo plano se ralentizan; avanzar la cola a mano con __tick/__wt.
