@@ -27,3 +27,7 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
   El 9-nov a las 10:00 se publicaron los DOS carruseles de Movember. Las 25 piezas pendientes de la tanda del 30-oct
   se pasaron a BORRADOR (draft) en Metricool, no se borraron. Antes de programar, comprobar siempre con getScheduledPosts
   que no hay piezas ya programadas en esas fechas.
+- 13-nov-2026: Healthspan Hoy 97 (mar 17, 18:00) producido y programado (Metricool id 426648808) con la noticia A (CSIC mayores de 65),
+  sin respuesta de Manuel. Quincena 23 nov–6 dic planificada: piezas 108–135 (21 reels, 5 carruseles, HH 111 y 125).
+  Doc: https://claude.ai/artifact/DRsV8o27TxiEbHWeMMsjop · planes/quincena-2026-11-23.md, prompts-2026-11-23.md, tlw-manuel-2026-11-23.md.
+  Pendiente: OK de Manuel + Mac conectado para generar las 26 imágenes; programar antes del dom 22 (revisar duplicados antes).
