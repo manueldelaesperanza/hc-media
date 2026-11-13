@@ -1,0 +1,8 @@
+{"type": "carousel", "image": null, "slides": [
+ {"kind": "news", "label": "HEALTHSPAN HOY · 17 NOV", "title": "España ya tiene <g>10 millones</g> de mayores de 65", "size": 88, "sub": "Vivimos más que nunca. El reto ahora es vivir bien esos años."},
+ {"kind": "text", "kicker": "El informe", "big": "20,7%", "bigsize": 190, "title": "de la población tiene 65 años o más", "body": "10.178.625 personas en 2025, 250.257 más que un año antes. Para 2046 se esperan más de 16 millones, cerca del 30%.", "source": "CSIC, «Un perfil de las personas mayores en España, 2026»"},
+ {"kind": "text", "kicker": "Centenarios", "big": "17.038", "bigsize": 190, "title": "personas de 100 años o más", "body": "Un 7,1% más que el año anterior. Ocho de cada diez son mujeres."},
+ {"kind": "text", "kicker": "La brecha", "title": "A los 65 quedan unos <g>22 años</g> de vida. Sin ninguna limitación, unos <g>10</g>", "size": 60, "body": "Más de la mitad de esos años se viven con alguna limitación para el día a día.", "source": "Ministerio de Sanidad, 2024 · Eurostat, 2023"},
+ {"kind": "text", "kicker": "Con perspectiva", "title": "Depende de <g>cómo se mida</g>", "body": "Si solo se cuentan las limitaciones graves, salen unos 19 años sin ellas. Pero las pequeñas también pesan: subir escaleras, cargar la compra, agacharse."},
+ {"kind": "text", "kicker": "Qué hacer", "title": "Los años con salud <g>se construyen</g>", "body": "Fuerza 2 días por semana, caminar a diario, dormir bien, revisiones al día y no perder a tu gente. Cuanto antes empieces, más años sumas."},
+ {"kind": "cta"}]}
