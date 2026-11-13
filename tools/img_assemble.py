@@ -14,9 +14,11 @@ for f in sorted(glob.glob(D + '*.txt') + glob.glob(D + '*.json'), key=os.path.ge
     try: t = "".join(x.get("text", "") for x in json.loads(raw))
     except Exception: t = raw
     for m in re.finditer(r'C\|(\w+)\|(\d+)\|([A-Za-z0-9+/=]*)\|E', t):
-        chunks.setdefault(m.group(1), {})[int(m.group(2))] = m.group(3)
+        chunks.setdefault(m.group(1), {})[int(m.group(2))] = (os.path.getmtime(f), m.group(3))
 for k in sys.argv[1:]:
     c = chunks.get(k, {})
+    t0 = c[0][0] if 0 in c else 0
+    c = {i: v[1] for i, v in c.items() if v[0] >= t0}  # ignore stale chunks older than the newest chunk 0
     s = "".join(c[i] for i in sorted(c))
     data = base64.b64decode(s)
     car = ROOT / 'carruseles' / k
