@@ -7,7 +7,8 @@ from pathlib import Path
 D = '/root/.claude/projects/-home-claude/5ab535d1-cd2a-591e-b076-cfd768350c06/tool-results/'
 ROOT = Path(__file__).resolve().parent.parent
 chunks = {}
-for f in glob.glob(D + '*.txt') + glob.glob(D + '*.json'):
+import os
+for f in sorted(glob.glob(D + '*.txt') + glob.glob(D + '*.json'), key=os.path.getmtime):  # newest wins
     raw = open(f).read()
     if 'C|' not in raw: continue
     try: t = "".join(x.get("text", "") for x in json.loads(raw))
