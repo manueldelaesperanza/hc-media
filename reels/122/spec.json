@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Invierno",
+   "title": "Un baño caliente <g>para el corazón</g>"
+  },
+  {
+   "title": "<g>−28%</g> de enfermedad cardiovascular",
+   "sub": "30.076 japoneses seguidos unos 20 años. Heart."
+  },
+  {
+   "title": "<g>−26%</g> de ictus",
+   "sub": "En quienes se bañaban a diario en agua caliente."
+  },
+  {
+   "title": "Agua caliente, <g>no ardiendo</g>",
+   "sub": "Con cuidado si tienes la tensión baja."
+  }
+ ],
+ "publish": "2026-11-30T10:00:00"
+}

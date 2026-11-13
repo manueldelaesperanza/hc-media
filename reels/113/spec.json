@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Una copa me ayuda <g>a dormir</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "4.098 personas con sensor de variabilidad cardiaca."
+  },
+  {
+   "title": "Peor <g>recuperación nocturna</g>",
+   "sub": "−9,3% con poco alcohol, −24% moderado, −39% mucho."
+  },
+  {
+   "title": "Te duermes antes, <g>descansas peor</g>",
+   "sub": "Esta Navidad, la última copa lejos de la cama."
+  }
+ ],
+ "publish": "2026-11-25T18:00:00"
+}

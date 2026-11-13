@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«El aceite de coco <g>es sano</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "16 ensayos. Revista Circulation."
+  },
+  {
+   "title": "Sube el <g>colesterol LDL</g>",
+   "sub": "Unos 10 mg/dL más que otros aceites vegetales."
+  },
+  {
+   "title": "Para cocinar, <g>aceite de oliva</g>",
+   "sub": "Lo de siempre, con evidencia."
+  }
+ ],
+ "publish": "2026-12-03T18:00:00"
+}

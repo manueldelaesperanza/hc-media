@@ -1,0 +1,42 @@
+{
+ "type": "carousel",
+ "image": "portada.jpg",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Guía práctica",
+   "title": "Empezar a correr después de los 40: <g>plan de 8 semanas</g>",
+   "sub": "De caminar a 20 minutos seguidos."
+  },
+  {
+   "kind": "text",
+   "kicker": "Por qué",
+   "big": "−27%",
+   "title": "de mortalidad en quienes corren",
+   "body": "Un análisis de 14 estudios con 232.149 personas encontró beneficio incluso corriendo una vez por semana y menos de 50 minutos.",
+   "source": "Pedisic et al., British Journal of Sports Medicine, 2020"
+  },
+  {
+   "kind": "text",
+   "kicker": "Semanas 1–4",
+   "title": "Alterna <g>andar y trotar</g>",
+   "body": "3 días por semana, 25 minutos.<br>Semana 1: 1 min trotando, 2 andando<br>Semana 2: 2 y 2<br>Semana 3: 3 y 2<br>Semana 4: 5 y 2"
+  },
+  {
+   "kind": "text",
+   "kicker": "Semanas 5–8",
+   "title": "Hacia <g>20 minutos seguidos</g>",
+   "body": "Semana 5: 8 trotando, 2 andando<br>Semana 6: 10 y 1<br>Semana 7: 15 seguidos<br>Semana 8: 20 seguidos<br>Si una semana cuesta, repítela."
+  },
+  {
+   "kind": "text",
+   "kicker": "Las reglas",
+   "title": "Despacio, <g>pudiendo hablar</g>",
+   "body": "Ritmo en el que puedas hablar. Un día de descanso entre sesiones y fuerza de piernas. Si tienes problemas de corazón o hace años que no haces deporte, consulta antes."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-12-02T10:00:00"
+}

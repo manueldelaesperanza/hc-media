@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Hay que hacer <g>5 comidas</g> al día»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "Ensayo de 8 semanas. British Journal of Nutrition."
+  },
+  {
+   "title": "3 o 6 comidas: <g>igual</g>",
+   "sub": "Mismas calorías, misma pérdida de peso."
+  },
+  {
+   "title": "Come <g>cuando te vaya bien</g>",
+   "sub": "Lo que cuenta es el total y la calidad."
+  }
+ ],
+ "publish": "2026-11-29T18:00:00"
+}

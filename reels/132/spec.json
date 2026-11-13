@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "Relaciones",
+   "title": "Los abuelos que cuidan <g>viven más</g>"
+  },
+  {
+   "title": "Más de <g>500 personas</g>",
+   "sub": "De 70 a 103 años, en Berlín. Evolution and Human Behavior."
+  },
+  {
+   "title": "<g>10 años</g> frente a <g>5</g>",
+   "sub": "La mitad de los que cuidaban seguía viva 10 años después."
+  },
+  {
+   "title": "Cuidar <g>a ratos</g>",
+   "sub": "Ayudar suma; agotarse, no."
+  }
+ ],
+ "publish": "2026-12-05T10:00:00"
+}

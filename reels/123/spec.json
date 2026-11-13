@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Mucha proteína <g>daña los riñones</g>»"
+  },
+  {
+   "title": "<g>Mito</g> si estás sano",
+   "sub": "Metaanálisis de 28 estudios. Journal of Nutrition."
+  },
+  {
+   "title": "Sin efecto en la <g>función renal</g>",
+   "sub": "Incluso con 1,5 g por kilo al día o más."
+  },
+  {
+   "title": "Si tienes <g>enfermedad renal</g>",
+   "sub": "Ahí sí, consulta con tu médico."
+  }
+ ],
+ "publish": "2026-11-30T18:00:00"
+}

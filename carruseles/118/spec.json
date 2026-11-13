@@ -1,0 +1,42 @@
+{
+ "type": "carousel",
+ "image": "portada.jpg",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Guía práctica",
+   "title": "Rutina de fuerza en casa <g>en 20 minutos</g>",
+   "sub": "Sin máquinas. Dos veces por semana."
+  },
+  {
+   "kind": "text",
+   "kicker": "Por qué",
+   "big": "30–60",
+   "title": "minutos de fuerza a la semana",
+   "body": "Es la dosis que más beneficio se asoció con la mortalidad en un análisis de 16 estudios. Dos sesiones de 20–30 minutos bastan.",
+   "source": "Momma et al., British Journal of Sports Medicine, 2022"
+  },
+  {
+   "kind": "text",
+   "kicker": "La rutina",
+   "title": "3 vueltas, <g>4 ejercicios</g>",
+   "body": "1. Sentadilla a una silla: 10–12<br>2. Flexiones con las manos en la mesa: 8–10<br>3. Remo con una mochila cargada: 10–12<br>4. Puente de glúteo: 12–15<br>Descansa 1 minuto entre vueltas."
+  },
+  {
+   "kind": "text",
+   "kicker": "Cómo progresar",
+   "title": "Cuando sea fácil, <g>súbele</g>",
+   "body": "Más peso en la mochila, más repeticiones o más lento al bajar. Las últimas 2 repeticiones deberían costarte."
+  },
+  {
+   "kind": "text",
+   "kicker": "Con cuidado",
+   "title": "Técnica <g>antes que peso</g>",
+   "body": "Espalda neutra, sin dolor articular. Si tienes una lesión o enfermedad del corazón, consulta antes."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-28T10:00:00"
+}

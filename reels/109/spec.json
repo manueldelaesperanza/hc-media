@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«A los 40 el metabolismo <g>se frena</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "6.421 personas de 8 días a 95 años. Revista Science."
+  },
+  {
+   "title": "Estable de los <g>20 a los 60</g>",
+   "sub": "Después baja solo un 0,7% al año."
+  },
+  {
+   "title": "Lo que cambia <g>es el músculo</g>",
+   "sub": "Y lo que te mueves. Ahí sí puedes actuar."
+  }
+ ],
+ "publish": "2026-11-23T18:00:00"
+}

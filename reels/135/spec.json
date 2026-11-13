@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "A medias",
+   "title": "¿Intervalos <g>a los 70</g>?"
+  },
+  {
+   "title": "Ensayo Generation 100",
+   "sub": "1.567 noruegos de 70 a 77 años, 5 años. BMJ."
+  },
+  {
+   "title": "Mortalidad: <g>3%</g> con intervalos",
+   "sub": "4,7% en el grupo control. No significativo."
+  },
+  {
+   "title": "Es <g>seguro</g> y suma",
+   "sub": "Dos días por semana, adaptado a tu forma."
+  }
+ ],
+ "publish": "2026-12-06T18:00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Hábitos",
+   "title": "Come <g>más despacio</g>"
+  },
+  {
+   "title": "<g>−42%</g> de obesidad",
+   "sub": "59.717 personas en Japón. BMJ Open."
+  },
+  {
+   "title": "La saciedad <g>llega tarde</g>",
+   "sub": "Tarda unos minutos en avisar al cerebro."
+  },
+  {
+   "title": "Suelta el <g>tenedor</g>",
+   "sub": "Entre bocado y bocado. Sin pantallas."
+  }
+ ],
+ "publish": "2026-11-26T18:00:00"
+}

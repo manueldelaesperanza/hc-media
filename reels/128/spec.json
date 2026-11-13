@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "Hábitos",
+   "title": "2 horas a la semana <g>en la naturaleza</g>"
+  },
+  {
+   "title": "<g>120 minutos</g>",
+   "sub": "19.806 personas en Inglaterra. Scientific Reports."
+  },
+  {
+   "title": "Mejor <g>salud y bienestar</g>",
+   "sub": "Por debajo de 2 horas, sin diferencia clara."
+  },
+  {
+   "title": "Parque, monte <g>o playa</g>",
+   "sub": "En una salida o en varias."
+  }
+ ],
+ "publish": "2026-12-03T10:00:00"
+}

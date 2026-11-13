@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Sueño",
+   "title": "La siesta, <g>con datos</g>"
+  },
+  {
+   "title": "<g>−37%</g> de muerte coronaria",
+   "sub": "23.681 adultos griegos. Archives of Internal Medicine."
+  },
+  {
+   "title": "Corta: <g>20–30 minutos</g>",
+   "sub": "Si te despiertas aturdido, ha sido larga."
+  },
+  {
+   "title": "Y no a <g>última hora</g>",
+   "sub": "Para no robarle sueño a la noche."
+  }
+ ],
+ "publish": "2026-11-27T10:00:00"
+}

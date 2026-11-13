@@ -1,0 +1,42 @@
+{
+ "type": "carousel",
+ "image": "portada.jpg",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Analítica",
+   "title": "El colesterol LDL: el número que <g>más pesa en tu corazón</g>",
+   "sub": "Lo que dicen 26 ensayos con unas 170.000 personas."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué es",
+   "title": "El colesterol <g>que se pega</g> a las arterias",
+   "body": "El LDL transporta colesterol por la sangre. Cuanto más alto y durante más años, más placas en las arterias y más riesgo de infarto e ictus."
+  },
+  {
+   "kind": "text",
+   "kicker": "La evidencia",
+   "big": "−22%",
+   "title": "de infartos e ictus al bajar el LDL",
+   "body": "Un análisis de 26 ensayos con unas 170.000 personas encontró que cada 1 mmol/L (unos 39 mg/dL) menos de LDL reducía un 22% los infartos, ictus y revascularizaciones.",
+   "source": "Cholesterol Treatment Trialists, The Lancet, 2010"
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué cifra",
+   "title": "Depende de <g>tu riesgo</g>",
+   "body": "No hay un número para todos: cuanto más riesgo cardiovascular tienes, más bajo conviene tenerlo. Pregúntale a tu médico cuál es tu objetivo."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Lo que <g>lo baja</g>",
+   "body": "Menos grasa saturada (embutidos, bollería, mantequilla), más fibra y legumbres, aceite de oliva, ejercicio y no fumar. Y si hace falta, medicación: funciona."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-26T10:00:00"
+}

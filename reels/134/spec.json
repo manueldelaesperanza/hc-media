@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Todo el pan <g>integral</g> lo es»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "Hay que mirar la etiqueta."
+  },
+  {
+   "title": "Integral = <g>100% harina integral</g>",
+   "sub": "Lo exige la norma del pan desde 2019."
+  },
+  {
+   "title": "Si no, verás <g>el %</g>",
+   "sub": "«Elaborado con harina integral» y el porcentaje."
+  }
+ ],
+ "publish": "2026-12-06T10:00:00"
+}

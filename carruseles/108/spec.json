@@ -1,0 +1,43 @@
+{
+ "type": "carousel",
+ "image": "portada.jpg",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Campaña de la gripe",
+   "title": "La vacuna de la gripe también <g>protege el corazón</g>",
+   "sub": "Un ensayo con 2.571 personas que acababan de tener un infarto."
+  },
+  {
+   "kind": "text",
+   "kicker": "El ensayo",
+   "big": "2.571",
+   "title": "pacientes tras un infarto",
+   "body": "En el ensayo IAMI recibieron la vacuna de la gripe o placebo en los días siguientes al infarto, y se les siguió un año.",
+   "source": "Fröbert et al., Circulation, 2021"
+  },
+  {
+   "kind": "text",
+   "kicker": "El resultado",
+   "big": "−41%",
+   "title": "de muertes en un año",
+   "body": "Con la vacuna hubo un 41% menos de muertes por cualquier causa y un 41% menos de muertes cardiovasculares que con placebo."
+  },
+  {
+   "kind": "text",
+   "kicker": "Por qué",
+   "title": "La gripe <g>inflama</g> y sobrecarga el corazón",
+   "body": "En los días después de una gripe sube el riesgo de infarto. Evitar la infección es también evitar ese pico."
+  },
+  {
+   "kind": "text",
+   "kicker": "Qué hacer",
+   "title": "Si tienes 60 o más, <g>te toca</g>",
+   "body": "En España se recomienda la vacuna a partir de los 60 años y en grupos de riesgo, como quien tiene enfermedad cardiaca. Pide cita en tu centro de salud."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-11-23T10:00:00"
+}

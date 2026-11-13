@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "A medias",
+   "title": "¿El chocolate <g>protege el corazón</g>?"
+  },
+  {
+   "title": "Ensayo COSMOS: <g>21.442</g> personas",
+   "sub": "Extracto de cacao o placebo, unos 3,6 años."
+  },
+  {
+   "title": "<g>−27%</g> de muerte cardiovascular",
+   "sub": "Pero el total de eventos (−10%) no fue significativo."
+  },
+  {
+   "title": "Era <g>extracto</g>, no tableta",
+   "sub": "Si comes chocolate, negro y en onzas."
+  }
+ ],
+ "publish": "2026-12-05T18:00:00"
+}

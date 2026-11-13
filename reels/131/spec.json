@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": null,
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Saltarse el desayuno <g>engorda</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "Metaanálisis de 13 ensayos. BMJ."
+  },
+  {
+   "title": "Desayunar: <g>+260 kcal</g> al día",
+   "sub": "Y 0,44 kg más de peso de media."
+  },
+  {
+   "title": "Desayuna <g>si tienes hambre</g>",
+   "sub": "Y si lo haces, que sea comida real."
+  }
+ ],
+ "publish": "2026-12-04T18:00:00"
+}

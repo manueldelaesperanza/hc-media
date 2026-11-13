@@ -1,0 +1,42 @@
+{
+ "type": "carousel",
+ "image": "portada.jpg",
+ "slides": [
+  {
+   "kind": "cover",
+   "kicker": "Guía práctica",
+   "title": "Navidad sin culpa: <g>5 reglas</g>",
+   "sub": "Disfrutar las fiestas sin empezar enero cuesta arriba."
+  },
+  {
+   "kind": "text",
+   "kicker": "El dato",
+   "big": "+0,8",
+   "title": "kilos en Navidad, y la mitad se queda",
+   "body": "Un estudio con unas 3.000 personas que se pesaban a diario vio subidas de 0,8 kg en Alemania, 0,6 en EE. UU. y 0,5 en Japón. La mitad se perdía pronto; el resto seguía meses después.",
+   "source": "Helander et al., NEJM, 2016"
+  },
+  {
+   "kind": "text",
+   "kicker": "Reglas 1 y 2",
+   "title": "Fiesta, <g>no temporada</g>",
+   "body": "1. Disfruta los días señalados; el resto, vida normal. 2. En las cenas, empieza por verdura y proteína, y sirve el turrón en plato pequeño."
+  },
+  {
+   "kind": "text",
+   "kicker": "Reglas 3 y 4",
+   "title": "Muévete y <g>vigila la copa</g>",
+   "body": "3. Paseo de 10–15 minutos después de comer: baja la glucosa. 4. Alterna cada copa con un vaso de agua, y la última lejos de la hora de dormir."
+  },
+  {
+   "kind": "text",
+   "kicker": "Regla 5",
+   "title": "No <g>compenses</g>",
+   "body": "Nada de ayunos castigo ni dietas de enero. Vuelve a tus rutinas al día siguiente: sueño, fuerza y comida real."
+  },
+  {
+   "kind": "cta"
+  }
+ ],
+ "publish": "2026-12-04T10:00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Hábitos",
+   "title": "Un huerto también <g>es salud</g>"
+  },
+  {
+   "title": "Ensayo con <g>291 adultos</g>",
+   "sub": "La mitad recibió un huerto urbano. Lancet Planetary Health."
+  },
+  {
+   "title": "<g>+42 min</g> de actividad",
+   "sub": "A la semana, y +1,4 g de fibra al día."
+  },
+  {
+   "title": "Y <g>menos estrés</g>",
+   "sub": "Sobre todo en quienes más lo tenían."
+  }
+ ],
+ "publish": "2026-11-29T10:00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«A los 90 ya <g>no se gana músculo</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "Personas de 86 a 96 años. Revista JAMA."
+  },
+  {
+   "title": "<g>+174%</g> de fuerza",
+   "sub": "En solo 8 semanas de entrenamiento."
+  },
+  {
+   "title": "Nunca es <g>tarde</g>",
+   "sub": "Pero cuanto antes empieces, mejor."
+  }
+ ],
+ "publish": "2026-11-27T18:00:00"
+}

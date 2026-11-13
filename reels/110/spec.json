@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Un multivitamínico al día <g>alarga la vida</g>»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "390.124 adultos sanos, seguidos más de 20 años."
+  },
+  {
+   "title": "<g>No vivieron más</g>",
+   "sub": "Al principio, incluso un 4% más de riesgo."
+  },
+  {
+   "title": "Primero, <g>comida real</g>",
+   "sub": "Suplementa solo lo que te falte, con tu médico."
+  }
+ ],
+ "publish": "2026-11-24T10:00:00"
+}

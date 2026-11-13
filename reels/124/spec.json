@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Nutrición",
+   "title": "El picante y <g>la longevidad</g>"
+  },
+  {
+   "title": "<g>−23%</g> de mortalidad",
+   "sub": "22.811 italianos seguidos 8 años. JACC."
+  },
+  {
+   "title": "<g>4 veces</g> por semana o más",
+   "sub": "Guindilla en la comida habitual."
+  },
+  {
+   "title": "Con <g>perspectiva</g>",
+   "sub": "Es una asociación. Si te sienta mal, no hace falta."
+  }
+ ],
+ "publish": "2026-12-01T10:00:00"
+}

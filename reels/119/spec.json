@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Movimiento",
+   "title": "El deporte que <g>más años suma</g>"
+  },
+  {
+   "title": "Tenis: <g>+9,7 años</g>",
+   "sub": "8.577 daneses seguidos hasta 25 años."
+  },
+  {
+   "title": "Gimnasio: <g>+1,5</g>",
+   "sub": "Bádminton +6,2, fútbol +4,7, bici +3,7."
+  },
+  {
+   "title": "La clave: <g>jugar con otros</g>",
+   "sub": "Es observacional, pero el juego en grupo suma."
+  }
+ ],
+ "publish": "2026-11-28T18:00:00"
+}

@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Movimiento",
+   "title": "Ir al trabajo <g>en bici</g>"
+  },
+  {
+   "title": "<g>−41%</g> de mortalidad",
+   "sub": "Más de 263.000 personas en Reino Unido. BMJ."
+  },
+  {
+   "title": "<g>−45%</g> de cáncer",
+   "sub": "Y un 46% menos de enfermedad cardiovascular."
+  },
+  {
+   "title": "Si no puedes, <g>camina</g>",
+   "sub": "Andar al trabajo también bajó el riesgo cardiovascular."
+  }
+ ],
+ "publish": "2026-11-25T10:00:00"
+}

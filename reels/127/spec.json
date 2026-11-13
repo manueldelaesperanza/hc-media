@@ -1,0 +1,23 @@
+{
+ "type": "reel",
+ "image": "imagen.jpg",
+ "beats": [
+  {
+   "kicker": "Mito o ciencia",
+   "title": "«Hay una dieta <g>mejor</g> para adelgazar»"
+  },
+  {
+   "title": "<g>Mito</g>",
+   "sub": "Ensayo DIETFITS: 609 adultos, 12 meses. JAMA."
+  },
+  {
+   "title": "<g>−5,3 kg</g> frente a <g>−6,0 kg</g>",
+   "sub": "Baja en grasa o baja en hidratos: sin diferencia."
+  },
+  {
+   "title": "La mejor es <g>la que mantienes</g>",
+   "sub": "Comida real, menos ultraprocesados."
+  }
+ ],
+ "publish": "2026-12-02T18:00:00"
+}
