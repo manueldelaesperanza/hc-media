@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Healthspan Club · plantillas de carrusel (1080x1350) y reel (1080x1920, 12 s).
+"""Hope Longevity · plantillas de carrusel (1080x1350) y reel (1080x1920, 12 s).
 
 Uso:
   python3 tools/hc_render.py spec.json OUT_DIR
@@ -22,7 +22,8 @@ import base64, json, os, subprocess, sys, tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-BG, GOLD, WHITE, SOFT = "#141814", "#F2C14E", "#FFFFFF", "#D7DACF"
+BG, GOLD, WHITE, SOFT = "#121612", "#C99A3E", "#FFFFFF", "#D7DACF"
+HANDLE = "@hope.longevity"
 
 
 def _font_css():
@@ -37,6 +38,8 @@ def _font_css():
 
 
 FONTS = _font_css()
+_svg = lambda n: "data:image/svg+xml;base64," + base64.b64encode((ROOT.parent / "assets" / "hope" / n).read_bytes()).decode()
+LOGO_H, LOGO_P = _svg("logo-horizontal-negativo.svg"), _svg("logo-principal-negativo.svg")
 
 
 def logo_svg(size=150, stroke="#fff", dot=GOLD, sw=3.2):
@@ -92,14 +95,17 @@ body{{background:{BG};font-family:Outfit,sans-serif;color:{WHITE}}}
 """
 
 
+SHADE = "<div class='fade' style='top:0;height:280px;background:linear-gradient(to bottom,rgba(18,22,18,.7),rgba(18,22,18,0))'></div>"
+
+
 def brand(sz=46):
-    return f"<div class='brand'>{logo_svg(sz, sw=5)}<span>HEALTHSPAN CLUB</span></div>"
+    return f"<div class='brand'><img src='{LOGO_H}' style='width:470px;display:block'></div>"
 
 
 def end_card_html(w, h, title, sub, pill):
     cy = h // 2 - 60
     return f"""<div class='page' style='width:{w}px;height:{h}px'>{rings_svg(w, h, w//2 - 40, cy + 220)}
-<div class='block' style='top:{cy-310}px'>{logo_svg(170)}
+<div class='block' style='top:{cy-310}px'><img src='{LOGO_P}' style='width:420px;display:block;margin:0 auto'>
 <div class='title' style='font-size:112px;margin-top:40px'>{gold(title)}</div>
 <div class='sub' style='color:#fff;font-size:40px'>{sub}</div>
 <div class='pill' style='margin-top:46px;font-size:34px;padding:22px 46px'>{pill}</div></div></div>"""
@@ -108,8 +114,8 @@ def end_card_html(w, h, title, sub, pill):
 def reel_beat_html(image, b):
     return f"""<div class='page' style='width:1080px;height:1920px'>
 <img class='photo' src='{img_uri(image)}' style='height:1180px'>
-<div class='fade' style='top:640px;height:560px;background:linear-gradient(to bottom,rgba(20,24,20,0),{BG} 92%)'></div>
-{brand()}
+<div class='fade' style='top:640px;height:560px;background:linear-gradient(to bottom,rgba(18,22,18,0),{BG} 92%)'></div>
+{SHADE}{brand()}
 <div class='block' style='top:1100px'>
 {f"<div class='kicker'>{b['kicker']}</div>" if b.get('kicker') else ''}
 <div class='title' style='font-size:{b.get('size', 100)}px'>{gold(b['title'])}</div>
@@ -122,7 +128,7 @@ def carousel_slide_html(s, image, i, n):
     k = s["kind"]
     num = f"<div class='num'>{i}/{n}</div>"
     if k == "cover":
-        photo = f"<img class='photo' src='{img_uri(image)}' style='height:880px'><div class='fade' style='top:420px;height:480px;background:linear-gradient(to bottom,rgba(20,24,20,0),{BG} 92%)'></div>" if image else rings_svg(w, h, 760, 420)
+        photo = f"<img class='photo' src='{img_uri(image)}' style='height:880px'><div class='fade' style='top:420px;height:480px;background:linear-gradient(to bottom,rgba(18,22,18,0),{BG} 92%)'></div>{SHADE}" if image else rings_svg(w, h, 760, 420)
         top = 800 if image else 420
         return f"""<div class='page' style='width:{w}px;height:{h}px'>{photo}{brand()}
 <div class='block' style='top:{top}px'>{f"<div class='kicker'>{s['kicker']}</div>" if s.get('kicker') else ''}
@@ -148,7 +154,7 @@ def carousel_slide_html(s, image, i, n):
     if k == "cta":
         return end_card_html(w, h, s.get("title", "SÍGUENOS PARA <g>VIVIR MÁS</g>"),
                              s.get("sub", "Ciencia de la longevidad, sin humo."),
-                             s.get("pill", "SÍGUENOS · @healthspanclub.es"))
+                             s.get("pill", f"SÍGUENOS · {HANDLE}"))
     raise ValueError(k)
 
 
@@ -181,7 +187,7 @@ def render_reel(spec, out, seg=2.4, xf=0.25):
     out.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp())
     htmls = [reel_beat_html(spec["image"], b) for b in spec["beats"]]
-    htmls.append(end_card_html(1080, 1920, "SÍGUENOS PARA <g>VIVIR MÁS</g>", "Ciencia de la longevidad, sin humo.", "SÍGUENOS · @healthspanclub.es"))
+    htmls.append(end_card_html(1080, 1920, "SÍGUENOS PARA <g>VIVIR MÁS</g>", "Ciencia de la longevidad, sin humo.", f"SÍGUENOS · {HANDLE}"))
     pngs = [tmp / f"b{i}.png" for i in range(len(htmls))]
     shoot(htmls, [(1080, 1920)] * len(htmls), pngs)
     n = len(pngs)
