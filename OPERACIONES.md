@@ -36,3 +36,10 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
   de la noticia de los viernes 20 y 27. Recordatorios de reels con send_later (16:45Z / 08:45Z).
   img_assemble.py: ahora el trozo más reciente gana y descarta trozos viejos (antes mezclaba imágenes de la misma clave).
   ChatGPT con el panel oculto: los temporizadores en segundo plano se ralentizan; avanzar la cola a mano con __tick/__wt.
+
+## 18 nov 2026 · Rebrand a Hope Longevity (@hope.longevity)
+- tools/hc_render.py ahora pinta la marca Hope Longevity: logo horizontal arriba (assets/hope/), logo principal en el cierre, ocre #C99A3E y fondo #121612, pill "SÍGUENOS · @hope.longevity".
+- Re-render de todo lo programado del 18 nov al 6 dic: 9 carruseles (98-130) y 27 reels (99-135). Los ficheros canónicos (slide_XX.jpg, reel.mp4, portada.jpg) están rebrandeados; para Metricool se usan copias *_hl.* (URL nueva, sin caché).
+- Las 36 publicaciones de Metricool actualizadas con la media nueva. El carrusel del 18 nov pasó de 10:00 a 12:00 para no salir con la marca vieja.
+- Los recordatorios de reels envían reels/NN/reel.mp4, que ya es la versión nueva. Los de los reels 99-107 todavía mencionan instagram.com/healthspanclub.es: el usuario es ahora @hope.longevity.
+- Brand assets de Hope Longevity: pack en el brandbook (Design System) y zip entregado a Manuel.
