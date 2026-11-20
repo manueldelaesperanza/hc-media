@@ -44,3 +44,9 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
 - Corrección el mismo día: los SVG del logo en negativo salían con el hueso oscurecido (Chromium aplicaba el ahorro de color al imprimir a PDF; se arregla con `print-color-adjust: exact`). Logos de assets/hope/ regenerados, todo re-renderizado y Metricool actualizado de nuevo con copias *_hl2.* (slide_XX_hl2.jpg, reel_hl2.mp4, portada_hl2.jpg). Para futuros renders, la media de Metricool debe apuntar a *_hl2.* o a un nombre nuevo.
 - Los recordatorios de reels envían reels/NN/reel.mp4, que ya es la versión nueva. Los de los reels 99-107 todavía mencionan instagram.com/healthspanclub.es: el usuario es ahora @hope.longevity.
 - Brand assets de Hope Longevity: pack en el brandbook (Design System) y zip entregado a Manuel.
+
+## 20 nov · Viernes: noticia + métricas
+- 111 (mar 24, 18:00): propuesta A (Gaesser y Sallis, Mayo Clin Proc nov 2026, DOI 10.1016/j.mayocp.2026.10.010: sedentarismo +46–163% de mortalidad frente a la peor dieta +3–20%; +2.000 pasos −25–50%) y B (Cell Metabolism, 16 nov, UCSD: centenarios y bacterias BSH; en ratones). A ya renderizada en carruseles/111 con la etiqueta «LONGEVIDAD HOY» (el nombre de la serie, pendiente de Manuel).
+- Metricool no deja programar sin el OK explícito de Manuel (el clasificador lo bloqueó). Recordatorio en la nube el lunes 23 a las 11:00.
+- Métricas IG 13–19 nov: 11 seguidores (igual), 200 visualizaciones (256 la semana anterior); mediana de alcance de los reels 6 (antes 9; en octubre 16) y de los carruseles 6 (antes 4,5). Lo mejor: los mitos de la sal marina y el azúcar moreno (13 cada uno). Visionado medio de los reels: unos 3 s. FB irrelevante. Meta Ads sin campañas en Metricool.
+- Propuesto: @delaesperanza como colaborador en las publicaciones (pendiente del OK).
