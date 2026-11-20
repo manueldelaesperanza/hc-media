@@ -1,0 +1,8 @@
+{"type": "carousel", "image": null, "slides": [
+ {"kind": "news", "label": "LONGEVIDAD HOY · 24 NOV", "title": "Para vivir más, <g>moverte</g> pesa más que comer perfecto", "size": 84, "sub": "Una revisión en Mayo Clinic Proceedings compara décadas de estudios sobre dieta, ejercicio y mortalidad."},
+ {"kind": "text", "kicker": "Estar sentado", "big": "+163%", "bigsize": 190, "title": "de riesgo de muerte, en el peor de los casos", "body": "No hacer ejercicio y pasar casi todo el día sentado se asoció con entre un 46% y más de un 163% más de mortalidad.", "source": "Gaesser y Sallis, Mayo Clinic Proceedings, noviembre 2026"},
+ {"kind": "text", "kicker": "Comer mal", "big": "+20%", "bigsize": 190, "title": "como máximo, con la peor dieta", "body": "Mucho ultraprocesado, carne procesada, azúcar y fritos se asoció con entre un 3% y un 20% más de riesgo."},
+ {"kind": "text", "kicker": "La dosis mínima", "big": "2.000", "bigsize": 190, "title": "pasos más al día", "body": "En personas sedentarias, sumar unos 2.000 pasos diarios (algo más de 1,5 km) se asoció con entre un 25% y un 50% menos de mortalidad."},
+ {"kind": "text", "kicker": "Con perspectiva", "title": "La dieta <g>sigue contando</g>", "size": 66, "body": "Comer como recomiendan las guías se asoció con un 6–20% menos de riesgo. Son estudios observacionales: muestran asociaciones, no causas."},
+ {"kind": "text", "kicker": "Qué hacer", "title": "Las dos cosas. Pero <g>empieza por moverte</g>", "size": 66, "body": "Camina a diario, sube escaleras y entrena fuerza 2 días por semana. Y come bien. Para los autores, las dos son medicina; el ejercicio, la más potente."},
+ {"kind": "cta"}]}
