@@ -53,9 +53,10 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
 - 20 nov, 09:10: Manuel eligió la B. Quedó programada en Metricool (uuid 6127936851351652560, 24 nov a las 18:00, IG+FB, autoPublish), con las imágenes hl111b_0N.jpg. La A se guarda en spec_A.json y caption_A.txt por si sirve para la 125 (1 dic). La etiqueta sigue siendo «LONGEVIDAD HOY» porque Manuel no dijo nada en contra.
 
 ## 23 nov · Reels con música y publicación automática
-- Manuel pidió que Claude ponga música genérica a los reels y los publique directamente con Metricool.
-- Manuel pidió más variedad y que la música encaje con el tema. Ahora cada reel tiene su propia pista original (tools/music_gen2.py, 8 estilos: mito, energia, calma, natural, calido, festivo, mediterraneo, manana). Cada pista está en musica/reels/NN.wav, normalizada a −16 LUFS.
-- La asignación de estilo y variante a cada reel está en musica/asignacion.txt. Cada reel se mezcla en reels/NN/reel_m2.mp4.
-- Los 21 reels del 109 al 135 están actualizados en Metricool con reel_m2.mp4 y autoPublish true (IG y FB).
-- Los recordatorios de reels que aún disparan ya no deben enviar archivos. Solo hay que comprobar en Metricool que el reel anterior se publicó y avisar si falló.
-- Para los reels nuevos: elegir el estilo según el tema, generar reel_m2.mp4 y programarlo con autoPublish true.
+- Manuel pidió que Claude ponga música a los reels y los publique directamente con Metricool. La música sintetizada le pareció «cutre», así que ahora se usa música real de dominio público.
+- La música es de FreePD.com (CC0: uso comercial permitido, sin atribución). Se descarga del repo github.com/SoundSafari/CC0-1.0-Music, carpeta freepd.com. Para bajar solo algunos archivos: clon con --filter=blob:none y `git checkout HEAD --pathspec-from-file`. Nunca usar `ls-tree -l`, porque descarga todo.
+- Cada pista se elige por el tema del reel (lista en musica/freepd/CREDITOS.txt). tools/music_cut.py recorta 12 s y normaliza a −15 LUFS. El vídeo final queda en reels/NN/reel_pd.mp4.
+- La biblioteca de audio de Instagram por Metricool (audioConfiguration) no funciona: el token no tiene permiso.
+- Los 21 reels del 109 al 135 están en Metricool con reel_pd.mp4 y autoPublish true (IG y FB).
+- Los recordatorios de reels que aún saltan ya no envían archivos. Solo comprueban en Metricool que el reel anterior se publicó y avisan si falló.
+- Para los reels nuevos: elegir la pista de FreePD según el tema, generar reel_pd.mp4 y programar con autoPublish true.
