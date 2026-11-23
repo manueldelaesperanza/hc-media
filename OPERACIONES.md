@@ -51,3 +51,11 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
 - Métricas IG 13–19 nov: 11 seguidores (igual), 200 visualizaciones (256 la semana anterior); mediana de alcance de los reels 6 (antes 9; en octubre 16) y de los carruseles 6 (antes 4,5). Lo mejor: los mitos de la sal marina y el azúcar moreno (13 cada uno). Visionado medio de los reels: unos 3 s. FB irrelevante. Meta Ads sin campañas en Metricool.
 - Propuesto: @delaesperanza como colaborador en las publicaciones (pendiente del OK).
 - 20 nov, 09:10: Manuel eligió la B. Quedó programada en Metricool (uuid 6127936851351652560, 24 nov a las 18:00, IG+FB, autoPublish), con las imágenes hl111b_0N.jpg. La A se guarda en spec_A.json y caption_A.txt por si sirve para la 125 (1 dic). La etiqueta sigue siendo «LONGEVIDAD HOY» porque Manuel no dijo nada en contra.
+
+## 23 nov · Reels con música y publicación automática
+- Manuel pidió que Claude ponga música genérica a los reels y los publique directamente con Metricool.
+- Las 4 pistas son originales, sintetizadas con tools/music_gen.py y normalizadas a −16 LUFS. Están en musica/pista_N_n.wav y se van alternando.
+- Los reels se mezclan con ffmpeg en reels/NN/reel_musica.mp4.
+- Los 21 reels del 109 al 135 están actualizados en Metricool con reel_musica.mp4 y autoPublish true (IG y FB).
+- Los recordatorios de reels que aún disparan ya no deben enviar archivos. Solo hay que comprobar en Metricool que el reel anterior se publicó y avisar si falló.
+- Para los reels nuevos: generar reel_musica.mp4 y programarlo con autoPublish true.
