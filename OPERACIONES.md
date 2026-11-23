@@ -54,8 +54,8 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
 
 ## 23 nov · Reels con música y publicación automática
 - Manuel pidió que Claude ponga música genérica a los reels y los publique directamente con Metricool.
-- Las 4 pistas son originales, sintetizadas con tools/music_gen.py y normalizadas a −16 LUFS. Están en musica/pista_N_n.wav y se van alternando.
-- Los reels se mezclan con ffmpeg en reels/NN/reel_musica.mp4.
-- Los 21 reels del 109 al 135 están actualizados en Metricool con reel_musica.mp4 y autoPublish true (IG y FB).
+- Manuel pidió más variedad y que la música encaje con el tema. Ahora cada reel tiene su propia pista original (tools/music_gen2.py, 8 estilos: mito, energia, calma, natural, calido, festivo, mediterraneo, manana). Cada pista está en musica/reels/NN.wav, normalizada a −16 LUFS.
+- La asignación de estilo y variante a cada reel está en musica/asignacion.txt. Cada reel se mezcla en reels/NN/reel_m2.mp4.
+- Los 21 reels del 109 al 135 están actualizados en Metricool con reel_m2.mp4 y autoPublish true (IG y FB).
 - Los recordatorios de reels que aún disparan ya no deben enviar archivos. Solo hay que comprobar en Metricool que el reel anterior se publicó y avisar si falló.
-- Para los reels nuevos: generar reel_musica.mp4 y programarlo con autoPublish true.
+- Para los reels nuevos: elegir el estilo según el tema, generar reel_m2.mp4 y programarlo con autoPublish true.
