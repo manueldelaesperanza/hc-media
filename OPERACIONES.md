@@ -60,3 +60,8 @@ El espacio de trabajo de Claude se reinicia sin aviso: TODO lo que haga falta de
 - Los 21 reels del 109 al 135 están en Metricool con reel_pd.mp4 y autoPublish true (IG y FB).
 - Los recordatorios de reels que aún saltan ya no envían archivos. Solo comprueban en Metricool que el reel anterior se publicó y avisan si falló.
 - Para los reels nuevos: elegir la pista de FreePD según el tema, generar reel_pd.mp4 y programar con autoPublish true.
+
+## 27 nov · Viernes: noticia, métricas y quincena 7–20 dic
+- 125 (mar 1, 18:00): propuesta A (Mayo Clin Proc, ya renderizada en carruseles/111/spec_A.json + caption_A.txt) o B (INE MNP 2025, 18 nov: esperanza de vida 84,05, +0,04). Reserva: Yale, Nature Medicine (51 estudios, edad epigenética; publicado en agosto). Sin el OK de Manuel no se programa.
+- Métricas IG 20–26 nov: 11 seguidores, 168 visualizaciones (200 antes). Mediana de alcance: reels 7 (antes 6), carruseles 4 (antes 6). Lo mejor: bici 16, nudillos 12. Meta Ads: sin campañas. Propuesta: prueba de anuncios con el mejor mito semanal; falta que Manuel diga el presupuesto.
+- Quincena 7–20 dic (136–163) planificada en el doc https://claude.ai/artifact/QgxBqDzqni2dgeY3YoAfD3. Prompts en planes/prompts-2026-12-07.md. Incluye TLW (7 reels del retiro + 2 carruseles) y 4 guiones de Manuel.
